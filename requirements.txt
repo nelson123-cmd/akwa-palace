@@ -1,0 +1,13 @@
+Flask==2.3.3
+Flask-CORS==4.0.0
+python-dotenv==1.0.0
+supabase==1.2.0
+python-dateutil==2.8.2
+email-validator==2.0.0
+bleach==6.0.0
+itsdangerous==2.1.2
+PyJWT==2.8.0
+click==8.1.7
+gunicorn==21.2.0
+python-magic==0.4.27
+ratelimit==2.2.1

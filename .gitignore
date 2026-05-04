@@ -1,0 +1,9 @@
+# Sensitive configuration files
+config.py
+.env
+.env.local
+.env.production
+
+# Python cache files
+__pycache__/
+*.pyc

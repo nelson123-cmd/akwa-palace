@@ -1,0 +1,583 @@
+
+<!doctype html>
+<html class="fuji_hotel  ltr" lang="fr-FR">
+<head>
+    <title>Localisation</title>
+
+<script type="text/javascript">
+/* GA TRACKER */
+
+/* Fb nb delay */
+
+			var FB_nb_day_delay = 0;
+</script>
+
+
+
+
+		<style>html { margin-top: 0px !important; } * html body { margin-top: 0px !important; }</style>
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+<script no-loader>/* Added by mu-plugin gmaps_keys_api_client.php */var fb__website_gmap_api_key = "AIzaSyCDeF3IKvg6XXEZuH3SGlN4O2h3sG_K_9c";</script>      <script type="text/javascript" no-loader>var $AvailProConfig = {"enable":"1","base_url":"https:\/\/www.secure-hotel-booking.com\/Hotel-Akwa-Palace\/JTK5\/","hid":"30151","groupid":"18116","is_group_be":"","excludeoffers":"","infants_maxage":"2","pass_language":"","hide_best_price":"","hide_last_room":"","currency":"XAF","language":"FR"};</script>
+            <!-- DEdge Macaron plugin output ( macaron-utils.min.js ) -->
+        <script no-loader type='text/javascript'>
+            var dedge_macaron_enabled = true;
+			!function(n){var e={};function t(r){if(e[r])return e[r].exports;var a=e[r]={i:r,l:!1,exports:{}};return n[r].call(a.exports,a,a.exports,t),a.l=!0,a.exports}t.m=n,t.c=e,t.d=function(n,e,r){t.o(n,e)||Object.defineProperty(n,e,{enumerable:!0,get:r})},t.r=function(n){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(n,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(n,"__esModule",{value:!0})},t.t=function(n,e){if(1&e&&(n=t(n)),8&e)return n;if(4&e&&"object"==typeof n&&n&&n.__esModule)return n;var r=Object.create(null);if(t.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:n}),2&e&&"string"!=typeof n)for(var a in n)t.d(r,a,function(e){return n[e]}.bind(null,a));return r},t.n=function(n){var e=n&&n.__esModule?function(){return n.default}:function(){return n};return t.d(e,"a",e),e},t.o=function(n,e){return Object.prototype.hasOwnProperty.call(n,e)},t.p="",t(t.s=5)}({5:function(n,e,t){"use strict";t.r(e),t.d(e,"MacaronFormatUtils",(function(){return r}));var r=function(){function n(){}return n.parseConsentString=function(n,e){var t={ad_storage:"strings"==e?"denied":"0",ad_user_data:"strings"==e?"denied":"0",ad_personalization:"strings"==e?"denied":"0",analytics_storage:"strings"==e?"denied":"0",functionality_storage:"strings"==e?"denied":"0",personalization_storage:"strings"==e?"denied":"0",security_storage:"strings"==e?"denied":"0"},r=n.match(/^V:([0-9]+),(.*)$/i);if(r){if(r[1]!==this.currentConsentFormat)return null;var a=r[2].split(",");if(a.length>0)for(var o=0;o<a.length;o++){var i=a[o].split(":");if(2==i.length){var s=i[0],u=i[1];if(void 0!==t[s]&&-1!==["0","1","granted","denied"].indexOf(u))switch(u){case"0":case"denied":t[s]="strings"==e?"denied":"0";break;case"1":case"granted":t[s]="strings"==e?"granted":"1"}}}return t}return null},n.serializeConsentObject=function(n){var e={ad_storage:"0",ad_user_data:"0",ad_personalization:"0",analytics_storage:"0",functionality_storage:"0",personalization_storage:"0",security_storage:"0"};Object.keys(n).forEach((function(t){switch(n[t]){case"0":case"denied":e[t]="0";break;case"1":case"granted":e[t]="1"}}));var t=["V:"+this.currentConsentFormat];return Object.keys(e).forEach((function(n){t.push(n+":"+e[n])})),t.join(",")},n.convertConsentToMacaronConsentArray=function(n){var e={ad_storage:"ads",ad_user_data:"ad_user_data",ad_personalization:"ad_personalization",analytics_storage:"stats",functionality_storage:"prefs",personalization_storage:"personalization",security_storage:"needed"},t=[];return Object.keys(e).forEach((function(r){var a=e[r];"1"!=n[r]&&"granted"!=n[r]||t.push(a)})),t},n.convertMacaronConsentArrayToGoogleFormat=function(n){var e={ads:"ad_storage",ad_user_data:"ad_user_data",ad_personalization:"ad_personalization",stats:"analytics_storage",prefs:"functionality_storage",personalization:"personalization_storage",needed:"security_storage"},t={ad_storage:"0",ad_user_data:"0",ad_personalization:"0",analytics_storage:"0",functionality_storage:"0",personalization_storage:"0",security_storage:"0"};return n.forEach((function(n){void 0!==e[n]?t[e[n]]="1":window.console&&console.log("Warning, skipping",n,"in consent conversion")})),t},n.getMacaronConsentArray=function(n){if(void 0===n)return[];var e=this.parseConsentString(n,"numbers");return null!==e?this.convertConsentToMacaronConsentArray(e):[]},n.hasValidCookieConsent=function(n){return void 0!==n&&null!==this.parseConsentString(n,"numbers")},n.currentConsentFormat="2",n}();void 0===window.MacaronFormatUtils&&(window.MacaronFormatUtils=r)}});
+!function(o,t){function _(n,e){return e.every(function(e){return-1!==n.indexOf(e)})}var e;e="_deCookiesConsent",t="undefined"!=typeof __deCookiesConfig&&void 0!==__deCookiesConfig.cookieNames&&void 0!==__deCookiesConfig.cookieNames[e]?__deCookiesConfig.cookieNames[e]:e;o.dedge_macaron_is_enabled=function(){return void 0!==o.dedge_macaron_enabled&&o.dedge_macaron_enabled},o.dedge_macaron_get_consent_categories=function(){if(!o.dedge_macaron_is_enabled())return["needed","prefs","stats","ads","unknown"];var e=function(e){e=("; "+document.cookie).split(`; ${e}=`);return 2===e.length?decodeURIComponent(e.pop().split(";").shift()):null}(t),n=[];if(!1!==e){n=[];try{n=JSON.parse(e)}catch(e){"undefined"!=typeof MacaronFormatUtils?n=MacaronFormatUtils.getMacaronConsentArray():window.console&&console.log("Warning, could not read Macaron Consent. MacaronFormatUtils not found")}}return n},o.dedge_macaron_on_consent=function(e,n,d){d=d||function(){};function o(o,t,e,a){return function(e){var n;r||(o=Array.isArray(o)?o:[o],(n=dedge_macaron_get_consent_categories())&&n.length&&(_(n,o)||_(o,["any"]))?(r=!0,t(n,a,e)):d(n,a,e))}}var t,r=!1;document.addEventListener("_deCookiesConsentGivenVanilla",o(e,n,0,"consentgiven")),t=o(e,n,0,"docready"),/complete|loaded|interactive/.test(document.readyState)?t({detail:"DOMContentAlreadyLoaded"}):document.addEventListener("DOMContentLoaded",function(e){t(e)})},o.dedge_macaron_load_consent_dependent_sections=function(i){var s,e,n;"GIVEN"!==(i=i||"GIVEN")&&"DENIED"!==i||(s="[MacaronCDS("+i+")] ",e=function(){var r="data-macaron-consent-cat",c=("DENIED"===i&&(r="data-macaron-consent-denied-cat"),dedge_macaron_get_consent_categories()),e=jQuery('script[type="application/json"][data-macaron-aware="true"]['+r+"]");0<e.length&&e.each(function(e,n){var o=jQuery(this),t=o.attr(r),e=o.attr("id")||"unknown-"+i+"-"+e,a=(a=t.split(",")).map(function(e){return e.replace(/[^a-z]+/g,"")});if("GIVEN"===i?_(c,a):!_(c,a)){window.console&&console.log(s+"LOAD #"+e+" for "+t);try{var d=JSON.parse(o.text());o.after(d),o.remove()}catch(e){window.console&&console.log(s+"ERROR",e,o,t)}}else window.console&&console.log(s+"SKIP #"+e+". Required="+t+"; Current="+c.join(","))})},"undefined"==typeof jQuery?n=setInterval(function(){"undefined"!=typeof jQuery&&(clearInterval(n),e())},150):e())},o.dedge_macaron_on_consent("any",function(){o.dedge_macaron_load_consent_dependent_sections("GIVEN")}),o.dedge_macaron_on_consent("any",function(){o.dedge_macaron_load_consent_dependent_sections("DENIED")})}(window,"_deCookiesConsent");        </script>
+        <!-- D-EdgeFBTrackingSupportsGA4 -->            <script no-loader>
+                window['ga-disable-G-CMJG3ZE5EE'] = true;window['ga-disable-G-52M50M7RF1'] = true;            </script>
+            <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<link rel="alternate" hreflang="en" href="https://hotel-akwa-palace.com/en/location/" />
+<link rel="alternate" hreflang="fr" href="https://hotel-akwa-palace.com/situation/" />
+<link rel="alternate" hreflang="x-default" href="https://hotel-akwa-palace.com/situation/" />
+<script>
+              var FBRESA = "//redirect.fastbooking.com/DIRECTORY/";
+              var is_AVP = true;
+             </script>
+	<!-- This site is optimized with the Yoast SEO plugin v22.3 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description" content="Découvrez la localisation de l&#039;Akwa Palace Douala, situé au centre de Douala à proximité de l&#039;aéroport et d&#039;autres activités de la ville." />
+	<link rel="canonical" href="/location-fr.html" />
+	<meta property="og:locale" content="fr_FR" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Où nous trouver ? | Akwa Palace Douala" />
+	<meta property="og:description" content="Découvrez la localisation de l&#039;Akwa Palace Douala, situé au centre de Douala à proximité de l&#039;aéroport et d&#039;autres activités de la ville." />
+	<meta property="og:url" content="https://hotel-akwa-palace.com/situation/" />
+	<meta property="og:site_name" content="Hôtel Akwa Palace Doula" />
+	<meta property="article:modified_time" content="2025-03-05T15:09:46+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://hotel-akwa-palace.com/situation/","url":"https://hotel-akwa-palace.com/situation/","name":"Où nous trouver ? | Akwa Palace Douala","isPartOf":{"@id":"https://hotel-akwa-palace.com/#website"},"datePublished":"2024-09-04T15:21:23+00:00","dateModified":"2025-03-05T15:09:46+00:00","description":"Découvrez la localisation de l'Akwa Palace Douala, situé au centre de Douala à proximité de l'aéroport et d'autres activités de la ville.","breadcrumb":{"@id":"https://hotel-akwa-palace.com/situation/#breadcrumb"},"inLanguage":"fr-FR","potentialAction":[{"@type":"ReadAction","target":["https://hotel-akwa-palace.com/situation/"]}]},{"@type":"BreadcrumbList","@id":"https://hotel-akwa-palace.com/situation/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://hotel-akwa-palace.com/"},{"@type":"ListItem","position":2,"name":"Localisation"}]},{"@type":"WebSite","@id":"https://hotel-akwa-palace.com/#website","url":"https://hotel-akwa-palace.com/","name":"Hôtel Akwa Palace Doula","description":"","publisher":{"@id":"https://hotel-akwa-palace.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://hotel-akwa-palace.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"fr-FR"},{"@type":"Organization","@id":"https://hotel-akwa-palace.com/#organization","name":"Hôtel Akwa Palace Doula","url":"https://hotel-akwa-palace.com/","logo":{"@type":"ImageObject","inLanguage":"fr-FR","@id":"https://hotel-akwa-palace.com/#/schema/logo/image/","url":"https://hotel-akwa-palace.com/wp-content/uploads/sites/167/2025/02/Logo_AkwaPalace_Orange.png","contentUrl":"https://hotel-akwa-palace.com/wp-content/uploads/sites/167/2025/02/Logo_AkwaPalace_Orange.png","width":485,"height":282,"caption":"Hôtel Akwa Palace Doula"},"image":{"@id":"https://hotel-akwa-palace.com/#/schema/logo/image/"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+<link rel='dns-prefetch' href='//websdk.fastbooking-services.com' />
+<link rel='dns-prefetch' href='//use.fontawesome.com' />
+<link rel='dns-prefetch' href='//staticaws.fbwebprogram.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+
+<style id='builder-colors'>
+:root{
+--header-color-associated : hsl(0, 0%, 20%);
+--header-d-20 : hsl(0, 0%, 80%);
+--header-d-15 : hsl(0, 0%, 85%);
+--header-d-10 : hsl(0, 0%, 90%);
+--header-d-5 : hsl(0, 0%, 95%);
+--header-d-3 : hsl(0, 0%, 97%);
+--header : hsl(0, 0%, 100%);
+--header-l-3 : hsl(0, 0%, 103%);
+--header-l-5 : hsl(0, 0%, 105%);
+--header-l-10 : hsl(0, 0%, 110%);
+--header-l-15 : hsl(0, 0%, 115%);
+--header-l-20 : hsl(0, 0%, 120%);
+--header-hsl : 0, 0%, 100%;
+--bg-color-associated : hsl(0, 0%, 20%);
+--bg-d-20 : hsl(0, 0%, 80%);
+--bg-d-15 : hsl(0, 0%, 85%);
+--bg-d-10 : hsl(0, 0%, 90%);
+--bg-d-5 : hsl(0, 0%, 95%);
+--bg-d-3 : hsl(0, 0%, 97%);
+--bg : hsl(0, 0%, 100%);
+--bg-l-3 : hsl(0, 0%, 103%);
+--bg-l-5 : hsl(0, 0%, 105%);
+--bg-l-10 : hsl(0, 0%, 110%);
+--bg-l-15 : hsl(0, 0%, 115%);
+--bg-l-20 : hsl(0, 0%, 120%);
+--bg-hsl : 0, 0%, 100%;
+--titles-color-associated : hsl(0, 0%, 90%);
+--titles-d-20 : hsl(152, 100%, -17%);
+--titles-d-15 : hsl(152, 100%, -12%);
+--titles-d-10 : hsl(152, 100%, -7%);
+--titles-d-5 : hsl(152, 100%, -2%);
+--titles-d-3 : hsl(152, 100%, 0%);
+--titles : hsl(152, 100%, 3%);
+--titles-l-3 : hsl(152, 100%, 6%);
+--titles-l-5 : hsl(152, 100%, 8%);
+--titles-l-10 : hsl(152, 100%, 13%);
+--titles-l-15 : hsl(152, 100%, 18%);
+--titles-l-20 : hsl(152, 100%, 23%);
+--titles-hsl : 152, 100%, 3%;
+--main-color-associated : hsl(0, 0%, 100%);
+--main-d-20 : hsl(156, 4%, 3%);
+--main-d-15 : hsl(156, 4%, 8%);
+--main-d-10 : hsl(156, 4%, 13%);
+--main-d-5 : hsl(156, 4%, 18%);
+--main-d-3 : hsl(156, 4%, 20%);
+--main : hsl(156, 4%, 23%);
+--main-l-3 : hsl(156, 4%, 26%);
+--main-l-5 : hsl(156, 4%, 28%);
+--main-l-10 : hsl(156, 4%, 33%);
+--main-l-15 : hsl(156, 4%, 38%);
+--main-l-20 : hsl(156, 4%, 43%);
+--main-hsl : 156, 4%, 23%;
+--secondary-color-associated : hsl(0, 0%, 100%);
+--secondary-d-20 : hsl(12.9, 79%, 31%);
+--secondary-d-15 : hsl(12.9, 79%, 36%);
+--secondary-d-10 : hsl(12.9, 79%, 41%);
+--secondary-d-5 : hsl(12.9, 79%, 46%);
+--secondary-d-3 : hsl(12.9, 79%, 48%);
+--secondary : hsl(12.9, 79%, 51%);
+--secondary-l-3 : hsl(12.9, 79%, 54%);
+--secondary-l-5 : hsl(12.9, 79%, 56%);
+--secondary-l-10 : hsl(12.9, 79%, 61%);
+--secondary-l-15 : hsl(12.9, 79%, 66%);
+--secondary-l-20 : hsl(12.9, 79%, 71%);
+--secondary-hsl : 12.9, 79%, 51%;
+--highlighted-color-associated : hsl(0, 0%, 100%);
+--highlighted-d-20 : hsl(12.9, 79%, 31%);
+--highlighted-d-15 : hsl(12.9, 79%, 36%);
+--highlighted-d-10 : hsl(12.9, 79%, 41%);
+--highlighted-d-5 : hsl(12.9, 79%, 46%);
+--highlighted-d-3 : hsl(12.9, 79%, 48%);
+--highlighted : hsl(12.9, 79%, 51%);
+--highlighted-l-3 : hsl(12.9, 79%, 54%);
+--highlighted-l-5 : hsl(12.9, 79%, 56%);
+--highlighted-l-10 : hsl(12.9, 79%, 61%);
+--highlighted-l-15 : hsl(12.9, 79%, 66%);
+--highlighted-l-20 : hsl(12.9, 79%, 71%);
+--highlighted-hsl : 12.9, 79%, 51%;
+--hover-color-associated : hsl(0, 0%, 100%);
+--hover-d-20 : hsl(12.9, 79%, 31%);
+--hover-d-15 : hsl(12.9, 79%, 36%);
+--hover-d-10 : hsl(12.9, 79%, 41%);
+--hover-d-5 : hsl(12.9, 79%, 46%);
+--hover-d-3 : hsl(12.9, 79%, 48%);
+--hover : hsl(12.9, 79%, 51%);
+--hover-l-3 : hsl(12.9, 79%, 54%);
+--hover-l-5 : hsl(12.9, 79%, 56%);
+--hover-l-10 : hsl(12.9, 79%, 61%);
+--hover-l-15 : hsl(12.9, 79%, 66%);
+--hover-l-20 : hsl(12.9, 79%, 71%);
+--hover-hsl : 12.9, 79%, 51%;
+--white: rgb(255, 255, 255);
+--gray-50: rgb(248, 249, 250);
+--gray-100: rgb(241, 243, 244);
+--gray-300: rgb(218, 220, 224);
+--gray-400: rgb(186, 190, 195);
+--gray-500: rgb(154, 160, 166);
+--gray-600: rgb(128, 134, 139);
+--gray-700: rgb(95, 99, 104);
+--gray-800: rgb(60, 64, 67);
+--gray-900: rgb(32, 33, 36);
+--black: rgb(0, 0, 0);
+}
+</style><link rel='stylesheet' id='a11y_panel-css' href='//hotel-akwa-palace.com/wp-content/plugins/de-builder-evo-blocks/templates/assets/css/a11y.css?ver=1.0.7' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<link rel='stylesheet' id='wpml-blocks-css' href='https://hotel-akwa-palace.com/wp-content/plugins/sitepress-multilingual-cms/dist/css/blocks/styles.css?ver=4.6.3' type='text/css' media='all' />
+<link rel='stylesheet' id='dyncal_widget_css-css' href='//websdk.fastbooking-services.com/widgets/app.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='dynamic_calendar-css' href='//hotel-akwa-palace.com/wp-content/themes/pro-theme-fuji/blocks/booking_form/assets/css/dynamic_calendar.min.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='main_content-css' href='//hotel-akwa-palace.com/wp-content/themes/pro-theme-fuji/blocks/main_content/assets/css/main_content.min.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css' href='//hotel-akwa-palace.com/wp-content/plugins/de-builder-evo-blocks/blocks/_shared/assets/css/fancybox.min.css?ver=3.5.7' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-css' href='//hotel-akwa-palace.com/wp-content/plugins/de-builder-evo-blocks/blocks/_shared/assets/css/slick.min.css?ver=1.9.0' type='text/css' media='all' />
+<link rel='stylesheet' id='m_custom_scrollbar-css' href='//hotel-akwa-palace.com/wp-content/plugins/de-builder-evo-blocks/blocks/_shared/assets/css/mcscrollbar.min.css?ver=3.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='fusion_components-css' href='//hotel-akwa-palace.com/wp-content/plugins/de-builder-evo-blocks/blocks/main_content/assets/css/fusion_components.min.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='map-css' href='//hotel-akwa-palace.com/wp-content/themes/pro-theme-fuji/blocks/map/assets/css/map.min.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='main-evo-style-css' href='//hotel-akwa-palace.com/wp-content/themes/pro-theme-fuji/css/main.css?ver=1.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='custom_evo_style-css' href='//hotel-akwa-palace.com/wp-content/themes/akwa-palace-new/css/custom_style.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='fontawesome-css' href='//use.fontawesome.com/releases/v5.14.0/css/all.css' type='text/css' media='all' />
+<link rel='stylesheet' id='fbicons-css' href='//staticaws.fbwebprogram.com/FBServicesWebfonts/css/services_webfont.css' type='text/css' media='all' />
+<link rel='stylesheet' id='redux-google-fonts-builder_settings-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2C400italic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7CManrope%3A200%2C300%2C400%2C500%2C600%2C700%2C800&#038;ver=1741792291' type='text/css' media='all' />
+<script type="text/javascript" src="https://hotel-akwa-palace.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://hotel-akwa-palace.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="wpml-cookie-js-extra">
+/* <![CDATA[ */
+var wpml_cookies = {"wp-wpml_current_language":{"value":"fr","expires":1,"path":"\/"}};
+var wpml_cookies = {"wp-wpml_current_language":{"value":"fr","expires":1,"path":"\/"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://hotel-akwa-palace.com/wp-content/plugins/sitepress-multilingual-cms/res/js/cookies/language-cookie.js?ver=4.6.3" id="wpml-cookie-js"></script>
+<script type="text/javascript" src="https://hotel-akwa-palace.com/wp-content/plugins/fbcmsv2/assets/js/availpro.js" id="fblib-js"></script>
+<link rel="https://api.w.org/" href="https://hotel-akwa-palace.com/wp-json/" /><link rel="alternate" type="application/json" href="https://hotel-akwa-palace.com/wp-json/wp/v2/pages/18" /><link rel='shortlink' href='https://hotel-akwa-palace.com/?p=18' />
+<link rel="apple-touch-icon" sizes="180x180" href="/wp-content/uploads/sites/167/fb_favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/wp-content/uploads/sites/167/fb_favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/wp-content/uploads/sites/167/fb_favicon/favicon-16x16.png">
+<link rel="manifest" href="/wp-content/uploads/sites/167/fb_favicon/site.webmanifest">
+<link rel="shortcut icon" href="/wp-content/uploads/sites/167/fb_favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/wp-content/uploads/sites/167/fb_favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+        <script>
+            var room_id_mapping = {"151667":"https:\/\/hotel-akwa-palace.com\/chambres-suites\/chambre-standard\/","151668":"https:\/\/hotel-akwa-palace.com\/chambres-suites\/chambre-first-deluxe\/","151669":"https:\/\/hotel-akwa-palace.com\/chambres-suites\/chambre-first-deluxe-twin\/","151670":"https:\/\/hotel-akwa-palace.com\/chambres-suites\/suite-junior\/","151671":"https:\/\/hotel-akwa-palace.com\/chambres-suites\/suite-senior\/"};
+            var rooms_page = "https:\/\/hotel-akwa-palace.com\/chambres-suites\/";
+        </script>
+            <script>
+            var smokingTranslations = {"no":"Non","yes":"Oui","both":"Les deux"};
+        </script>
+        
+
+<style id='builder-fonts'>
+:root{
+--first-font: Roboto;
+--highlight-font: Manrope;
+}
+</style>
+
+        <script>
+            var rtl = false; //for slick
+            var originLeft = true; //for isotope
+        </script>
+
+            <style>
+            .de_block_post_preview .btnCta.scrollToElement,
+            .de_block_filterable_posts .btnCta.scrollToElement,
+            .de_block_detailed_post_preview .btnCta.scrollToElement {
+                display: none !important;
+            }
+        </style>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <style>
+            
+        </style>
+            <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="only light">
+    <meta http-equiv="Cache-control" content="public">
+    <link rel="icon" type="image/svg+xml" href="https://hotel-akwa-palace.com/wp-content/themes/pro-theme-fuji/css/images/favicon.svg">
+</head>
+
+<body id="" class="page-template page-template-template-location page-template-template-location-php page page-id-18 home location fuji_hotel dftLangPostId_18 fr" >
+<a class="skip" href="#main-content-1">Skip to content</a>
+<!--fuji-->
+<header id="header_wrapper" class="show_book_always">
+    <div id="header">
+        <div class="wrap">
+                            <a role="button" aria-haspopup="dialog" aria-label="Open menu" id="open_menu" class="open_menu" href="javascript:">
+                    <span class="icon"></span>
+                    <span class="sr-only">Menu</span>
+                </a>
+                        <a id="logo" class="hidden-xs" href="index.html">
+                <img alt="Hotel Akwa Palace Douala Homepage" class="original" src="https://hotel-akwa-palace.com/wp-content/uploads/sites/167/2025/02/Logo_AkwaPalace_Orange.png">
+                                    <img  alt="Hotel Akwa Palace Douala Homepage" class="custom" src="https://hotel-akwa-palace.com/wp-content/uploads/sites/167/2025/02/Logo_AkwaPalace_Blanc.png">
+                            </a>
+            <div class="right_col">
+                                    <div id="header_contacts">
+                                                    <span class="address element"><span class="icon hidden-xs hidden-sm hidden-md"></span><span
+                                        class="label hidden-xs hidden-sm hidden-md">920 Bd de la Liberté, Douala, Cameroun</span><a
+                                        href="location-fr.html" class="icon mobile hidden-sm hidden-lg"></a></span>
+                                                <span class="phone element"><span class="icon hidden-xs hidden-sm hidden-md"></span><span
+                                    class="label hidden-xs hidden-sm hidden-md"><a
+                                        href='tel:+237 6 75 15 42  19'>+237 6 75 15 42  19</a></span><a
+                                    href="tel:+237 2 33 42 26 01"
+                                    class="icon mobile hidden-sm hidden-lg"></a></span><span class="email element"><span class="icon hidden-xs hidden-sm hidden-md"></span><span
+                                    class="label hidden-xs hidden-sm hidden-md"><a href="/cdn-cgi/l/email-protection#126171773c60776177606473667b7d7c61527a7d66777e3f737965733f62737e7371773c717d7f"><span class="__cf_email__" data-cfemail="067565632874637563747067726f696875466e6972636a2b676d71672b76676a6765632865696b">[email&#160;protected]</span></a></span><a href="/cdn-cgi/l/email-protection#deadbdbbf0acbbadbbaca8bfaab7b1b0ad9eb6b1aabbb2f3bfb5a9bff3aebfb2bfbdbbf0bdb1b3" class="icon mobile hidden-sm hidden-lg"></a></span>
+                    </div>
+                                    <div class="languages hidden-xs">
+                        <nav aria-label="Language menu" class="desktop hidden-xs"><ul>
+                        <li class="icl-fr">
+                         <a aria-current="page" aria-expanded="false" aria-controls="other_languages" role="button" class="lang_sel_sel" href="javascript:;">                             
+                             <span>Français</span>
+                         </a>
+                  <ul id="other_languages" class="other_languages"><li  class="icl-en">
+                                <a class="lang_sel_other" href="/eng/location-eng.html">
+                                 <img role="presentation" alt="" width="34px" height="34px" class="iclflag"  alt="English" src="//staticaws.fbwebprogram.com/FBFlags/languages/rectangular/svg/en.svg">
+                                 <span lang="en">English</span>
+                                </a>
+                          </li></ul></li></ul></nav>
+                    </div>
+                        </div>
+    </div>
+    <div id="main_book_wrapper" class="">
+    <div id="main_book" class="open_bookingform_btn main_book  dynamic_calendar_open">
+        <a role="button" href="/rooms-fr/book/booking-fr.html"
+           class="first_book_now open_booking link_button tablet_book hidden-xs hidden-sm"
+           onclick="">Réserver</a>
+        <a role="button" class="second_book_now  open_booking link_button tablet_book hidden-md hidden-lg" href="/rooms-fr/book/booking-eng.html"
+           onclick="">Réserver</a>
+    </div>
+</div>
+    </div>
+    </div>
+</header>
+<div id="mobile_bar" class="hidden-sm hidden-md hidden-lg">
+    <a id="logo_mobile" class="" href="index.html">
+        <img  alt="Hotel Akwa Palace Douala Homepage" class="original" src="https://hotel-akwa-palace.com/wp-content/uploads/sites/167/2025/02/Logo_AkwaPalace_Orange.png">
+                    <img alt="Hotel Akwa Palace Douala Homepage" class="custom" src="https://hotel-akwa-palace.com/wp-content/uploads/sites/167/2025/02/Logo_AkwaPalace_Blanc.png">
+            </a>
+    <div id="languages_mobile" class="languages">
+        <div class="mobile">
+                            <select aria-label="Language menu" id="mobile_languages" onchange="if (this.value) window.location.href=this.value"><option value="https://hotel-akwa-palace.com/en/location/" >English</option><option value="https://hotel-akwa-palace.com/situation/" selected="selected">Français</option></select>                    </div>
+    </div>
+</div>
+
+<div id="sidebar_overlay" class=""></div>
+
+<div role="dialog" aria-modal="true" id="menu_sidebar_wrap" class=" ">
+    <div class="menu_sidebar">
+        <a class="close_sidebar close link_button" href="javascript:;"><span class="sr-only">Close menu</span></a>
+        <div class="menu_sidebar_inner_content">
+            <a id="sidebar_logo" href="index.html">
+                <img alt="Hotel Akwa Palace Douala Homepage"  class="original" src="https://hotel-akwa-palace.com/wp-content/uploads/sites/167/2025/02/Logo_AkwaPalace_Orange.png">
+            </a>
+            <nav aria-label="Main menu" id="sidebar_menu">
+                <ul class="menu hidden-xs hidden-sm">
+                    <li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-36"><span class="menu_label"><a href="index.html">Accueil</a></span></li>
+<li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-38"><span class="menu_label"><a href="room.html">Chambres</a></span>
+<ul class="sub-menu">
+	<li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41"><span class="menu_label"><a href="/rooms-fr/room1.html">Chambre Standard</a></span></li>
+	<li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39"><span class="menu_label"><a href="/rooms-fr/room2.html">Chambre First Deluxe</a></span></li>
+	<li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><span class="menu_label"><a href="/rooms-fr/room3.html">Chambre First Deluxe Twin</a></span></li>
+	<li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><span class="menu_label"><a href="/rooms-fr/room4.html">Suite Junior</a></span></li>
+	<li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43"><span class="menu_label"><a href="/rooms-fr/room5.html">Suite Sénior</a></span></li>
+</ul>
+</li>
+<li id="menu-item-49" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-49"><span class="menu_label"><a href="kitchen.html">Restaurants</a></span>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-285"><span class="menu_label"><a href="/resto-fr/bistro.html">Le Bistro</a></span></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-287"><span class="menu_label"><a href="/resto-fr/nsa.html">Le Tsä</a></span></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-286"><span class="menu_label"><a href="/rooms-fr/tourn-fr.html">Le Tournebroche</a></span></li>
+</ul>
+</li>
+<li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><span class="menu_label"><a href="events.html">Réunions &#038; Évènements</a></span></li>
+<li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"><span class="menu_label"><a href="leasure.html">Bien-Être</a></span></li>
+<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><span class="menu_label"><a href="services.html">Services</a></span></li>
+<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><span class="menu_label"><a href="location-fr.html">Localisation</a></span></li>
+<li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46"><span class="menu_label"><a href="attraction-fr.html">Attractions</a></span></li>
+<li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><span class="menu_label"><a href="offer-fr.html">Offres</a></span></li>
+<li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><span class="menu_label"><a href="photos-fr.html">Photos</a></span></li>
+<li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44"><span class="menu_label"><a href="contact-fr.html">Contact</a></span></li>
+<li id="menu-item-45" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45"><span class="menu_label"><a href="FAQ-fr.html">FAQ</a></span></li>
+<li id="menu-item-45" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-21 current_page_item menu-item-45"><span class="menu_label"><a href="FAQ-fr.html" aria-current="page">FAQ</a></span></li>                </ul>
+                <ul class="menu hidden-md hidden-lg">
+
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-36"><span class="menu_label"><a href="index.html">Accueil</a></span></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-38"><span class="menu_label"><a href="room.html">Chambres</a></span>
+<ul class="sub-menu">
+	<li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41"><span class="menu_label"><a href="/rooms-fr/room1.html">Chambre Standard</a></span></li>
+	<li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39"><span class="menu_label"><a href="/rooms-fr/room2.html">Chambre First Deluxe</a></span></li>
+	<li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><span class="menu_label"><a href="/rooms-fr/room3.html">Chambre First Deluxe Twin</a></span></li>
+	<li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><span class="menu_label"><a href="/rooms-fr/room4.html">Suite Junior</a></span></li>
+	<li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43"><span class="menu_label"><a href="/rooms-fr/room5.html">Suite Sénior</a></span></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-49"><span class="menu_label"><a href="kitchen.html">Restaurants</a></span>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-285"><span class="menu_label"><a href="/resto-fr/bistro.html">Le Bistro</a></span></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-287"><span class="menu_label"><a href="/resto-fr/nsa.html">Le Tsä</a></span></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-286"><span class="menu_label"><a href="/rooms-fr/tourn-fr.html">Le Tournebroche</a></span></li>
+</ul>
+</li>
+<li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><span class="menu_label"><a href="events.html">Réunions &#038; Évènements</a></span></li>
+<li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"><span class="menu_label"><a href="leasure.html">Bien-Être</a></span></li>
+<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><span class="menu_label"><a href="services.html">Services</a></span></li>
+<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><span class="menu_label"><a href="location-fr.html">Localisation</a></span></li>
+<li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46"><span class="menu_label"><a href="attraction-fr.html">Attractions</a></span></li>
+<li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><span class="menu_label"><a href="offer-fr.html">Offres</a></span></li>
+<li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><span class="menu_label"><a href="photos-fr.html">Photos</a></span></li>
+<li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44"><span class="menu_label"><a href="contact-fr.html">Contact</a></span></li>
+<li id="menu-item-45" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45"><span class="menu_label"><a href="FAQ-fr.html">FAQ</a></span></li>
+<li id="menu-item-45" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-21 current_page_item menu-item-45"><span class="menu_label"><a href="FAQ-fr.html" aria-current="page">FAQ</a></span></li>
+                </ul>
+        </div>
+        <div aria-hidden="true" class="highlights">
+                    </div>
+    </div>
+</div>
+</div>
+<!-- Booking Form START -->
+<section  id="booking-form-1" class=" de_block de_block_booking_form de_first before_main_content section booking_form_section dynamic inline ">
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script no-loader>
+        var hotel_minadults = "1",
+            hotel_minchildren = 0,
+            hotel_delay = 0,
+            hotel_opendate = "08\/22\/2025",
+            hotel_minstay = 1,
+            first_day = 1;
+    </script>
+
+    
+    
+<div id="dyncal_wrapper" class="dyncal_wrapper">
+    <div id="dyncal_box" class="dyncal_box">
+        <div class="dyncal_header">
+            <h4 class="main_subtitle">Réserver une chambre</h4>
+            <div tabindex="0" role="button" class="close close_calendar link_button">
+              <span class="sr-only">Fermer</span>
+          </div>
+        </div>
+        <div id="crs" class="crs">
+            <div id="fb_calendar" class="fb-widget" data-fbConfig="0"></div>
+        </div>
+    </div>
+    <script type="text/json" id="fb-widget-config" class="fb-widget-config" data-fbConfig="0">{"params":[{"calendar":{"firstDayOfWeek":1,"nbMonths2display":2,"startingMonth":"2025-08","title":"","showBestPrice":true,"showLastRoom":true,"showLastRoomThreshold":3,"showChildrenAges":false,"themeDark":false,"layoutNum":2,"roomRateFiltering":0,"rateFilter":[],"roomFilter":[],"useLoyalty":false,"loyalty":"","loyaltyParams":[],"useRedirectUrlFromApi":true,"daysLookAhead":"180"},"currency":"XAF","locale":"fr_FR","maxAdults":4,"maxChildren":2,"mainColor":"#000000","openFrontInNewTab":true,"property":"JTK5-30151","title":"eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJib29raW5nRW5naW5lUmVmZXJlbmNlIjoiSlRLNSIsImhvdGVsSWQiOiIzMDE1MSIsImdyb3VwSWQiOiIxODExNiIsInJlZmVyZW5jZVJhdGVDb2RlIjoiUkFDSzIiLCJkaXNwbGF5TmFtZSI6IkhvdGVsLUFrd2EtUGFsYWNlIiwibmJmIjoxNzI5MTU5NzMwLCJleHAiOjI1MzQwMjMwMDgwMCwiaWF0IjoxNzI5MTU5NzMwLCJpc3MiOiJBdmFpbHBybyBBUEkgTWFuYWdlciIsImF1ZCI6ImQtZWRnZSJ9.tZtYXDkhFpbdCS_GkeLozIX2ArXpTMZvwqxaaTSU1fv3mgY9_Rs6BvV5W47N32v2Qcq7peUExj1tqKtc7SDJtA","childrenMaxAge":12,"fbWidget":"Calendar"}],"commonParams":{"redirectUrl":"https:\/\/www.secure-hotel-booking.com\/","showPropertiesList":false,"demoMode":false},"_authCode":"eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJib29raW5nRW5naW5lUmVmZXJlbmNlIjoiSlRLNSIsImhvdGVsSWQiOiIzMDE1MSIsImdyb3VwSWQiOiIxODExNiIsInJlZmVyZW5jZVJhdGVDb2RlIjoiUkFDSzIiLCJkaXNwbGF5TmFtZSI6IkhvdGVsLUFrd2EtUGFsYWNlIiwibmJmIjoxNzI5MTU5NzMwLCJleHAiOjI1MzQwMjMwMDgwMCwiaWF0IjoxNzI5MTU5NzMwLCJpc3MiOiJBdmFpbHBybyBBUEkgTWFuYWdlciIsImF1ZCI6ImQtZWRnZSJ9.tZtYXDkhFpbdCS_GkeLozIX2ArXpTMZvwqxaaTSU1fv3mgY9_Rs6BvV5W47N32v2Qcq7peUExj1tqKtc7SDJtA","propertyIndex":0,"version":"1.26.1","baseHost":"https:\/\/websdk.fastbooking-services.com"}</script>
+</div></section><!-- Main Content START -->    <div id="breadcrumb" class=" de_block de_block_main_content after_booking_form before_map hidden-xs ">
+        <div class="container">
+            <ul itemscope itemtype="http://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="index.html">
+                        <span itemprop="name">Accueil</span>
+                    </a>
+                    <meta itemprop="position" content="1"/>
+                </li>            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="current-menu-item">
+                <a itemprop="item" href="location-fr.html">
+                    <span itemprop="name">Localisation</span>
+                </a>
+                <meta itemprop="position" content="2"/>
+            </li>
+            </ul>        </div>
+    </div>
+
+<main id="main-content-1" role="main" class="main section  no title_only">
+      <div class="container collapsibleContent_wrap content_wrap ">
+      <div id="main_content">
+
+                <h1 class="the_title">Où nous trouver ? </h1>
+        <h2 class="the_subtitle">Hôtel de luxe à Douala - Cameroun</h2>      </div>
+          </div>
+  </main>
+
+<!-- Map START -->
+<script>
+    var style = [];
+    style['custom'] = [{"featureType":"poi.business","stylers":[{"visibility":"off"}]}];
+    style['default'] = [{"featureType":"poi.business","stylers":[{"visibility":"off"}]}];
+    style['dark'] = [{"elementType":"geometry","stylers":[{"color":"#212121"}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"elementType":"labels.text.fill","stylers":[{"color":"#757575"}]},{"elementType":"labels.text.stroke","stylers":[{"color":"#212121"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#757575"}]},{"featureType":"administrative.country","elementType":"labels.text.fill","stylers":[{"color":"#9e9e9e"}]},{"featureType":"administrative.land_parcel","stylers":[{"visibility":"off"}]},{"featureType":"administrative.locality","elementType":"labels.text.fill","stylers":[{"color":"#bdbdbd"}]},{"featureType":"poi","elementType":"labels.text.fill","stylers":[{"color":"#757575"}]},{"featureType":"poi.business","stylers":[{"visibility":"off"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#181818"}]},{"featureType":"poi.park","elementType":"labels.text.fill","stylers":[{"color":"#616161"}]},{"featureType":"poi.park","elementType":"labels.text.stroke","stylers":[{"color":"#1b1b1b"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"color":"#2c2c2c"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#8a8a8a"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#373737"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#3c3c3c"}]},{"featureType":"road.highway.controlled_access","elementType":"geometry","stylers":[{"color":"#4e4e4e"}]},{"featureType":"road.local","elementType":"labels.text.fill","stylers":[{"color":"#616161"}]},{"featureType":"transit","elementType":"labels.text.fill","stylers":[{"color":"#757575"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#3d3d3d"}]}];;
+    style['desaturated'] =[{"stylers":[{"saturation":-55}]},{"featureType":"poi.business","stylers":[{"visibility":"off"}]}];
+    style['bright'] = [{"elementType":"geometry","stylers":[{"color":"#f5f5f5"}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"elementType":"labels.text.fill","stylers":[{"color":"#616161"}]},{"elementType":"labels.text.stroke","stylers":[{"color":"#f5f5f5"}]},{"featureType":"administrative.land_parcel","elementType":"labels.text.fill","stylers":[{"color":"#bdbdbd"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#eeeeee"}]},{"featureType":"poi","elementType":"labels.text.fill","stylers":[{"color":"#757575"}]},{"featureType":"poi.business","stylers":[{"visibility":"off"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#e5e5e5"}]},{"featureType":"poi.park","elementType":"labels.text.fill","stylers":[{"color":"#9e9e9e"}]},{"featureType":"road","elementType":"geometry","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"labels.text.fill","stylers":[{"color":"#757575"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#dadada"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"color":"#616161"}]},{"featureType":"road.local","elementType":"labels.text.fill","stylers":[{"color":"#9e9e9e"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"color":"#e5e5e5"}]},{"featureType":"transit.station","elementType":"geometry","stylers":[{"color":"#eeeeee"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#c9c9c9"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#9e9e9e"}]}];
+    style['bright_2'] = [{"elementType":"geometry.fill","stylers":[{"weight":"2.00"}]},{"elementType":"geometry.stroke","stylers":[{"color":"#9c9c9c"}]},{"elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"landscape","stylers":[{"color":"#f2f2f2"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape.natural","elementType":"labels","stylers":[{"color":"#6c6c6c"},{"visibility":"simplified"}]},{"featureType":"poi","stylers":[{"visibility":"off"}]},{"featureType":"road","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"color":"#eeeeee"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#7b7b7b"}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","stylers":[{"visibility":"simplified"}]},{"featureType":"transit","stylers":[{"visibility":"off"}]},{"featureType":"water","stylers":[{"color":"#46bcec"},{"visibility":"on"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#c8d7d4"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#070707"}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]}];
+
+    var styleResolved = style["default"];
+</script>  <script>
+
+    var map_data = {
+      markers: [{"title":"Hotel Akwa Palace Douala","latitude":"4.050270658233425","longitude":"9.695564066899474","address":"920 Bd de la Libert\u00e9, Douala, , Cameroun","phone":"+237 2 33 42 26 01","mail":"sce.reservations@hotel-akwa-palace.com","slug":"hotel"}],
+      markers_by_category: [],
+      icon:  "\/\/hotel-akwa-palace.com\/wp-content\/plugins\/de-builder-evo-blocks\/blocks\/map\/assets\/img\/marker_small.svg",
+      icon_hotel: "\/\/hotel-akwa-palace.com\/wp-content\/plugins\/de-builder-evo-blocks\/blocks\/map\/assets\/img\/marker.svg"    };
+    var hotel_gps_coordinates = {
+      latitude: 4.05027065823,
+      longitude: 9.6955640669    };
+    var lang =  "fr";
+    var lang_directions =  "fr-fr";
+    var data =  {"last_tab":"0","hotel_name":"Hotel Akwa Palace Douala","hotel_stars":"3","logo":{"url":"https:\/\/hotel-akwa-palace.com\/wp-content\/uploads\/sites\/167\/2025\/02\/Logo_AkwaPalace_Blanc.png","id":"294","height":"282","width":"485","thumbnail":"https:\/\/hotel-akwa-palace.com\/wp-content\/uploads\/sites\/167\/2025\/02\/Logo_AkwaPalace_Blanc-150x150.png","title":"Logo_AkwaPalace_Blanc","caption":"","alt":"","description":""},"hotel_url":"https:\/\/hotel-akwa-palace.com\/","hotel_phone":"+237 2 33 42 26 01","hotel_fax":"","hotel_email":"sce.reservations@hotel-akwa-palace.com","404_image":{"url":"https:\/\/hotel-akwa-palace.com\/wp-content\/uploads\/sites\/167\/2024\/09\/A7R08284.jpg","id":"81","height":"1209","width":"2200","thumbnail":"https:\/\/hotel-akwa-palace.com\/wp-content\/uploads\/sites\/167\/2024\/09\/A7R08284-150x150.jpg","title":"A7R08284","caption":"","alt":"","description":""},"additional_logo":{"url":"https:\/\/hotel-akwa-palace.com\/wp-content\/uploads\/sites\/167\/2025\/02\/Logo_AkwaPalace_Orange.png","id":"293","height":"282","width":"485","thumbnail":"https:\/\/hotel-akwa-palace.com\/wp-content\/uploads\/sites\/167\/2025\/02\/Logo_AkwaPalace_Orange-150x150.png","title":"Logo_AkwaPalace_Orange","caption":"","alt":"","description":""},"hotel_vat":"","hotel_gds":"","ty_widget":"","google-plus":"","facebook":"https:\/\/www.facebook.com\/AkwaPalaceHotel","twitter":"https:\/\/twitter.com\/AkwaPalaceHotel","pinterest":"","youtube":"","instagram":"https:\/\/www.instagram.com\/akwapalacehotel\/","linkedin":"https:\/\/www.linkedin.com\/company\/akwapalacehotel\/","flickr":"","tripadvisor":"https:\/\/www.tripadvisor.com\/Hotel_Review-g297392-d1177317-Reviews-Akwa_Palace_Douala-Douala_Littoral_Region.html","skype":"","vk":"","foursquare":"","line":"","we_chat":"","vimeo":"","whatsapp":"","tiktok":"","hotel_address":"920 Bd de la Libert\u00e9","hotel_pc":"","hotel_city":"Douala","hotel_country":"Cameroun","hotel_coords":"4.050270658233425,9.695564066899474","map_type":"ROADMAP","map_zoom":"16","map_scroll_wheel":"","provider":"embed","gmap_style":"default","custom_style":"","custom_style_static":"","embed_type":"address","hotel_name_map":"","hotel_iframe_map":"","hotel_marker":{"url":"","id":"","height":"","width":"","thumbnail":"","title":"","caption":"","alt":"","description":""},"poi_marker":{"url":"","id":"","height":"","width":"","thumbnail":"","title":"","caption":"","alt":"","description":""},"hotel_hid":"","fb_hotel_name":"","hotel_connect_name":"","fb_cluster_name":"","remove_automatic_credits_link":"0","hotel_formtitle":"","hotel_nbdelay":"","hotel_minadults":"1","hotel_maxadults":"4","hotel_minchildren":"","hotel_maxchildren":"2","hotel_trackingcode":"","hotel_hide_best_price":"","hotel_hide_last_room":"","hotel_minstay":"","hotel_opendate":"","hotel_childrenage":"","hotel_childrenage_enable":"","websdk_token":"eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJib29raW5nRW5naW5lUmVmZXJlbmNlIjoiSlRLNSIsImhvdGVsSWQiOiIzMDE1MSIsImdyb3VwSWQiOiIxODExNiIsInJlZmVyZW5jZVJhdGVDb2RlIjoiUkFDSzIiLCJkaXNwbGF5TmFtZSI6IkhvdGVsLUFrd2EtUGFsYWNlIiwibmJmIjoxNzI5MTU5NzMwLCJleHAiOjI1MzQwMjMwMDgwMCwiaWF0IjoxNzI5MTU5NzMwLCJpc3MiOiJBdmFpbHBybyBBUEkgTWFuYWdlciIsImF1ZCI6ImQtZWRnZSJ9.tZtYXDkhFpbdCS_GkeLozIX2ArXpTMZvwqxaaTSU1fv3mgY9_Rs6BvV5W47N32v2Qcq7peUExj1tqKtc7SDJtA","websdk_min_adults":"1","websdk_mcm":"","websdk_currency":"XAF","avp_enable":"1","avp_base_url":"https:\/\/www.secure-hotel-booking.com\/Hotel-Akwa-Palace\/JTK5\/","avp_hid":"30151","avp_groupid":"18116","avp_is_group_be":"","avp_excludeoffers":"","avp_infants_maxage":"2","avp_pass_language":"","avp_hide_best_price":"","avp_hide_last_room":"","avp_currency":"XAF","hotel_ga_tracker":"","hotel_ga_tracker2":"","hotel_ga_tracker3":"","hotel_gwt_tag":"","hotel_bwt_tag":"","google_adwords":"","hotel_event_management":"","hotel_service_management":"","hotel_poi_management":"","hotel_news_management":"","dedge_enable_comments":"0","fbpro_opt_enable_lp":"","fbpro_opt_lp_page":"","fbpro_opt_lp_date":"","fbpro_opt_fb_social_login":"","fbpro_opt_pages_categories":"","fbpro_opt_cjk_word_wrap":"no","fbpro_opt_mikan":"no","REDUX_last_saved":1746103532,"REDUX_LAST_SAVE":1746103532,"hotel_name___orig":"Hotel Akwa Palace Douala","hotel_address___orig":"920 Bd de la Libert\u00e9","hotel_city___orig":"Douala","hotel_country___orig":"Cameroun","hotel_email___orig":"sce.reservations@hotel-akwa-palace.com","hotel_phone___orig":"+237 2 33 42 26 01"};
+
+    var map_zoom =16;
+    var map_type ="roadmap";
+    var map_config = {
+      'map_canvas': {
+        'visible_markers': ['hotel'],
+        'default_zoom': map_zoom
+      }
+    };
+  </script>
+
+
+  <section id="map-1" class=" de_block de_block_map after_main_content de_last section map_section section_padding both">
+            <div id="map_wrapper">
+      <div class="map_wrapper">
+        <!-- map wrap  -->
+                    <div style="width: 100%; height:100%;">
+           <iframe allowfullscreen loading="lazy"  width="100%" height="100%" src="https://maps.google.com/maps?hl=fr&t=&q=920 Bd de la Liberté, Douala, , Cameroun&z=16&z=16&ie=UTF8&iwloc=B&output=embed"></iframe>        </div><br/>
+            <!-- hotel details  -->
+        <div id="contact_box" class="">
+  <div class="wrap">
+    <div class="contacts">
+      <div class="title">Hotel Akwa Palace Douala</div>	
+		<span class="element element_address">
+			<span class="element_pref">Adresse</span>
+			<span class="element_data">920 Bd de la Liberté, Douala, Cameroun</span>
+		</span>	
+		<span class="element element_phone">
+			<span class="element_pref">Téléphone</span>
+			<span class="element_data"><a href='tel:+237 6 75 15 42  19'>+237 6 75 15 42  19</a></span>
+		</span>	
+		<span class="element element_mail">
+			<span class="element_pref">Adresse électronique</span>
+			<span class="element_data"><a href="/cdn-cgi/l/email-protection#4b38282e65392e382e393d2a3f222425380b23243f2e27662a203c2a663b2a272a282e65282426"><span class="__cf_email__" data-cfemail="afdcccca81ddcadccaddd9cedbc6c0c1dcefc7c0dbcac382cec4d8ce82dfcec3ceccca81ccc0c2">[email&#160;protected]</span></a></span>
+		</span>    </div>
+
+  </div>
+</div>      </div>
+      <!-- itinerary  -->
+          </div>
+      </section>
+
+<div id="map_directions" class="hidden-xs hidden-sm">
+    <div id="map_directions_container" class="">
+        <a href="javascript:;" class="close close_map top"></a>
+        <div id="map_directions_content"></div>
+        <a href="javascript:;" class="close close_map bottom"></a>
+    </div>
+</div><footer id="footer">
+    <div id="footer_top_menu">
+        <div class="container">
+            <ul id="menu-footer-fr" class="menu"><li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="contact-fr.html">Contact</a></li>
+                <li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a href="FAQ-fr.html">FAQ</a></li>
+                <li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57"><a href="location-fr.html">Localisation</a></li>
+                <li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58"><a href="sitemap.html">Plan du site</a></li>
+                <li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55"><a href="kookie.html">Gestion des Cookies</a></li>
+                <li id="menu-item-56" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a href="law.html">Mentions Légales</a></li>
+			<li id="menu-item-credits" class="menu-item menu-item-type-custom menu-item-object-custom"><a target="_blank" href="https://www.d-edge.com/">Crédits</a></li></ul>                </nav>
+                    </div>
+    </div>
+    <div id="footer_bottom">
+        <div class="top">
+            <div class="container">
+                <div class="socials">
+                    <a aria-label="Facebook opens in a new tab" target="_blank" href="https://www.facebook.com/AkwaPalaceHotel" class="facebook"><span class="fab fa-facebook-f"></span></a><a aria-label="Twitter opens in a new tab" target="_blank" href="https://twitter.com/AkwaPalaceHotel" class="twitter"><span class="fab fa-twitter"></span></a><a aria-label="Instagram opens in a new tab" target="_blank" href="https://www.instagram.com/akwapalacehotel/" class="instagram"><span class="fab fa-instagram"></span></a><a aria-label="Tripadvisor opens in a new tab" target="_blank" href="https://www.tripadvisor.com/Hotel_Review-g297392-d1177317-Reviews-Akwa_Palace_Douala-Douala_Littoral_Region.html" class="tripadvisor"><span class="fab fa-tripadvisor"></span></a><a aria-label="Linkedin opens in a new tab" target="_blank" href="https://www.linkedin.com/company/akwapalacehotel/" class="linkedin"><span class="fab fa-linkedin-in"></span></a>                </div>
+                <div class="contacts">	
+		<span class="element element_address">
+			<span class="element_pref">Adresse</span>
+			<span class="element_data">920 Bd de la Liberté, Douala, Cameroun</span>
+		</span>	
+		<span class="element element_phone">
+			<span class="element_pref">Téléphone</span>
+			<span class="element_data"><a href='tel:+237 6 75 15 42  19'>+237 6 75 15 42  19</a></span>
+		</span>	
+		<span class="element element_mail">
+			<span class="element_pref">Adresse électronique</span>
+			<span class="element_data"><a href="/cdn-cgi/l/email-protection#364555531844534553444057425f595845765e5942535a1b575d41571b46575a5755531855595b"><span class="__cf_email__" data-cfemail="cfbcacaae1bdaabcaabdb9aebba6a0a1bc8fa7a0bbaaa3e2aea4b8aee2bfaea3aeacaae1aca0a2">[email&#160;protected]</span></a></span>
+		</span></div>
+            </div>
+        </div>
+
+                <div class="bottom">
+            <div class="container">
+                <div id="copy">
+                     &copy; Copyright Hotel Akwa Palace Douala 2025                </div>
+                <div id="seobar">Hotel Akwa Palace Douala                     - 4 étoiles - Douala                </div>
+            </div>
+        </div>
+
+        <div class="widgets-container">
+                                </div>
+
+    </div>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/npm/intersection-observer@0.7.0/intersection-observer.min.js?ver=0.7.0" id="lazy-load-polyfill-js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js?ver=12.4.0" id="lazy-load-js"></script>
+<script type="text/javascript" defer="defer" src="//hotel-akwa-palace.com/wp-content/plugins/de-builder-evo-blocks/blocks/_shared/assets/js/jquery-ui.min.js?ver=1.12.1" id="jquery-ui-js"></script>
+<script type="text/javascript" defer="defer" src="https://hotel-akwa-palace.com/wp-content/plugins/fbcmsv2/assets/js/i18n/jquery.ui.datepicker-fr.js?ver=1.9.2" id="jquery-ui-dp-custom-fr-js"></script>
+<script type="text/javascript" defer="defer" src="//hotel-akwa-palace.com/wp-content/plugins/de-builder-evo-blocks/blocks/booking_form/assets/js/dp_a11y.min.js?ver=1.0.0" id="datepicker_a11y-js"></script>
+<script type="text/javascript" defer="defer" src="//websdk.fastbooking-services.com/widgets/app.js?ver=1.0.0" id="dyncal_widget_js-js"></script>
+<script type="text/javascript" defer="defer" src="//hotel-akwa-palace.com/wp-content/themes/pro-theme-fuji/blocks/booking_form/assets/js/dynamic_calendar.js?ver=1.0.1" id="dynamic_calendar-js"></script>
+<script type="text/javascript" defer="defer" src="//hotel-akwa-palace.com/wp-content/plugins/de-builder-evo-blocks/blocks/booking_form/assets/js/browser.cjs.min.js?ver=1.0.0" id="calspacker-js"></script>
+<script type="text/javascript" defer="defer" src="//hotel-akwa-palace.com/wp-content/plugins/de-builder-evo-blocks/blocks/booking_form/assets/js/dynamic_calendar_a11y.min.js?ver=1.0.0" id="dynamic_calendar_a11y-js"></script>
+<script type="text/javascript" defer="defer" src="//hotel-akwa-palace.com/wp-content/plugins/de-builder-evo-blocks/blocks/_shared/assets/js/fancybox.min.js?ver=3.5.7" id="fancybox-js"></script>
+<script type="text/javascript" src="//hotel-akwa-palace.com/wp-content/themes/pro-theme-fuji/js/main.js?ver=1.0.1" id="main-js"></script>
+<script type="text/javascript" defer="defer" src="//hotel-akwa-palace.com/wp-content/themes/pro-theme-fuji/blocks/main_content/assets/js/main_content.js?ver=1.0.0" id="main_content-js"></script>
+<script type="text/javascript" defer="defer" src="//hotel-akwa-palace.com/wp-content/plugins/de-builder-evo-blocks/blocks/_shared/assets/js/slick.min.js?ver=3.1.0" id="slick-js"></script>
+<script type="text/javascript" defer="defer" src="//hotel-akwa-palace.com/wp-content/plugins/de-builder-evo-blocks/blocks/_shared/assets/js/mcscrollbar.min.js?ver=1.9.0" id="m_custom_scrollbar-js"></script>
+<script type="text/javascript" defer="defer" src="//websdk.fastbooking-services.com/fbsdk/fbsdk.polyfills.min.js?ver=1.0.0" id="websdk_polyfill-js"></script>
+<script type="text/javascript" defer="defer" src="//websdk.fastbooking-services.com/fbsdk/fbsdk.min.js?ver=1.9.0" id="websdk-js"></script>
+<script type="text/javascript" defer="defer" src="//hotel-akwa-palace.com/wp-content/plugins/de-builder-evo-blocks/blocks/_shared/assets/js/mustache.min.js?ver=3.1.0" id="mustache-js"></script>
+<script type="text/javascript" defer="defer" src="//hotel-akwa-palace.com/wp-content/plugins/de-builder-evo-blocks/blocks/_shared/assets/js/websdk_resolver.min.js?ver=1.0.0" id="websdk_resolver-js"></script>
+<script type="text/javascript" defer="defer" src="//hotel-akwa-palace.com/wp-content/plugins/de-builder-evo-blocks/blocks/_shared/assets/js/websdk_offers.js?ver=1.0.0" id="websdk_offers-js"></script>
+<script type="text/javascript" src="//hotel-akwa-palace.com/wp-content/plugins/de-builder-evo-blocks/templates/assets/js/a11y_patches.js?ver=1.0.2" id="a11y_patches-js"></script>
+        <script> var a11yPatchesStrings = {"next":"Next","prev":"Previous","about":"about","sending":"Sending, please wait"}</script>
+                <!-- DEdge Macaron plugin output -->
+        <script no-loader type='text/javascript'>
+            __deCookieToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZXMiOiJha3dhLXBhbGFjZS1kb3VhbGEubXMyLmRlY21zLmV1IiwiaWF0IjoxNzI1NDYzNTM2LCJqdGkiOiIwZjEzNDIyZi1iYTc4LTRjMDctYTk5NS0yYmNiNjg3MmI1M2QifQ.xqEt3JRdqLkp2_ljY2MIx-8S-IqwR3CNcGJ6dENBhs4";
+            __deCookiesCustom = [];
+            __deCookiesStrings = {};
+            __deCookiesConfig = {"consent_mode_v2":false,"consent_mode_v2_google_ui":false,"tpl":"popin","show_refuse_button":true,"show_close_button":false,"alwaysInjectBanner":false,"dny_ac_dft":false,"privacy_policy":"https:\/\/hotel-akwa-palace.com\/gestion-des-cookies\/"};
+            __deCookiesScriptUrl = "https:\/\/macaron-assets.d-edge-webstudio.com\/decookie.min.js?ver=1738859722";
+            !function(t,o,n){function a(e){window.dataLayer=window.dataLayer||[],window.console&&console.log("Pushing to DL",e),dataLayer.push(e)}var e,i,d,r,s,c,l;i=function(){window[t]=function(a){if(void 0===a||void 0===a.cookies||null===a)window.console&&console.log(t," Cookie data is null. failing gracefully");else{var e=window.__deCookiesCustom||[];if(0<e.length){for(var o=0;o<e.length;o++){var n=function(e,o){for(var n=0;n<a.cookies.length;n++)if(a.cookies[n].name===e&&a.cookies[n].domain===o)return a.cookies[n];return!1}(e[o].name,e[o].domain);!1===n?a.cookies.push(e[o]):"undefined"!=typeof jQuery&&jQuery.extend(!0,n,e[o])}window.console&&console.log&&console.log("MACARON Final list of cookies",a.cookies)}}},window.__deCookieMustacheDataFilter=function(e){"function"==typeof dedge_macaron_override_mustache_data&&dedge_macaron_override_mustache_data(e)},jQuery(document).on("__macaron_loaded",function(){var e;"undefined"!=typeof dataLayer&&(window.__deCookieClasses=__deCookies.consentGivenOn,a({event:"macaronLoaded"}),e=__deCookiesConfig.tpl||"minimal",a({macaronTemplate:e}))}),jQuery(document).on("__macaron_deps_loaded",function(){var e="undefined"!=typeof __deCookiesStrings?__deCookiesStrings:{};"undefined"!=typeof __deCookieI18n&&(__deCookieI18n=jQuery.extend(!0,__deCookieI18n,e))}),jQuery(document).on("_deCookiesConsentGiven",function(e){var o=Array.prototype.slice.call(arguments,1);"undefined"!=typeof dataLayer&&(window.__deCookieClasses=o,a({event:"macaronConsentGiven",macaronConsentClasses:o}))}),dedge_macaron_on_consent("any",function(n){var e=__deCookiesConfig.tpl||"minimal";a({macaronTemplate:e}),a({event:"macaronConsent",macaronCategories:n}),document.dispatchEvent(new CustomEvent("macaronConsentVanilla",{detail:{consent:n}})),jQuery(document).trigger("macaronConsent",{consent:n}),jQuery.each(n,function(e,o){a({event:"macaronConsent_"+o,macaronCategories:n}),document.dispatchEvent(new CustomEvent("macaronConsentVanilla_"+o,{detail:{consent:n}})),jQuery(document).trigger("macaronConsent_"+o,{consent:n})})});var e=document.createElement("script");e.setAttribute("async",!0),e.setAttribute("data-config",JSON.stringify(n)),e.id="de-macaron-script",e.src=o,((document.getElementsByTagName("head")||[null])[0]||document.getElementsByTagName("script")[0].parentNode).appendChild(e)},void 0!==(e="jQuery")&&void 0!==i&&(e.constructor!==Array&&(e=[e]),void 0===d&&(d=100),r="$_onAvailableIntervals",s="$_onAvailableCallbacks",window[r]=window[r]||[],window[s]=window[s]||[],window[s].push(i),i=window[s].length-1,window[r].push(setInterval((c=i,l=e,function(){for(var e=!0,o=0;o<l.length;o++)e=e&&function(e){e=e.split(".");for(var o=window[e.shift()];o&&e.length;)o=o[e.shift()];return void 0!==o}(l[o]);e&&(clearInterval(window[r][c]),void 0!==window[s][c]&&window[s][c]())}),d)))}("__deCookieResponseFilter",__deCookiesScriptUrl,__deCookiesConfig);        </script>
+        <style id="macaron-css-variables" type="text/css">body #macaron_cookie_box {--macaron-banner-bg: #FFFFFF; --macaron-maincta-bg: #008000; --macaron-maincta-text: #FFFFFF; --macaron-maincta-h-bg: #666666; --macaron-maincta-h-text: #FFFFFF; --macaron-choosecta-bg: #FFFFFF; --macaron-choosecta-text: #000000; --macaron-choosecta-h-bg: #FFFFFF; --macaron-choosecta-h-text: #000000; --macaron-othercta-bg: #000000; --macaron-othercta-text: #FFFFFF; --macaron-othercta-h-bg: #666666; --macaron-othercta-h-text: #FFFFFF; --macaron-cookielist-border: #000000; --macaron-text-color: #000000; --macaron-cookie-th-bg: #EEEEEE; --macaron-cookie-tr-border: #DDDDDD; --macaron-onoff-switch: #FFFFFF; --macaron-onoff-off-bg: #CCCCCC; --macaron-onoff-off-border: #CCCCCC; --macaron-onoff-on-bg: #008000; --macaron-onoff-on-border: #008000; --macaron-popin-underlay-bg: #FFFFFF; --macaron-onoff-radius-out: 24px; --macaron-onoff-radius-in: 16px; --macaron-onoff-dis-opacity: 0.3; --macaron-cta-dis-opacity: 0.3; --macaron-popin-underlay-opacity: 0.5; --macaron-cta-radius: 0px; --macaron-box-zindex: 9999999999999999999999999999;} </style>
+</body>
+</html>
+

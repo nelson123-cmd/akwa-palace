@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Hotels Near Douala Airport | Best Nearby Accommodation & Safe Stays in Cameroon</title>
+  <meta name="description" content="Looking for hotels near Douala International Airport? Discover the best nearby accommodation including Akwa Palace Hotel. Safe, luxurious, and perfectly located for your Cameroon journey.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'Poppins', 'Roboto', system-ui, sans-serif;
+      background: linear-gradient(135deg, #f0f4f0 0%, #e8ede5 100%);
+      color: #2c2b28;
+      padding: 2rem 1rem;
+      line-height: 1.5;
+    }
+
+    .airport-container {
+      max-width: 1300px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 2rem;
+      box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+
+    /* Hero section */
+    .airport-hero {
+      background: linear-gradient(112deg, #1a3a2e 0%, #2a5a44 100%);
+      padding: 2rem 2rem;
+      color: #fff2df;
+      text-align: center;
+    }
+
+    .airport-hero h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+    }
+
+    .airport-hero p {
+      font-size: 1.1rem;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .safety-badge {
+      background: #d4af37;
+      color: #1f402a;
+      display: inline-block;
+      padding: 0.4rem 1.2rem;
+      border-radius: 40px;
+      font-weight: bold;
+      margin-top: 1rem;
+      font-size: 0.85rem;
+    }
+
+    /* Navigation menu */
+    .nav-menu {
+      background: #2c5e3f;
+      padding: 0.8rem 2rem;
+      border-bottom: 3px solid #d4af37;
+    }
+
+    .nav-menu ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      justify-content: center;
+    }
+
+    .nav-menu li {
+      margin: 0;
+    }
+
+    .nav-menu a {
+      color: #fff7e8;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      padding: 0.3rem 0.6rem;
+      transition: 0.2s;
+      display: inline-block;
+    }
+
+    .nav-menu a:hover {
+      color: #d4af37;
+      transform: translateY(-2px);
+    }
+
+    /* main layout */
+    .two-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    @media (max-width: 850px) {
+      .two-columns {
+        grid-template-columns: 1fr;
+      }
+      .airport-hero h1 {
+        font-size: 1.8rem;
+      }
+    }
+
+    .info-card {
+      background: #fefcf7;
+      border-radius: 28px;
+      border: 1px solid #e0d8c8;
+      overflow: hidden;
+    }
+
+    .card-header {
+      background: #fff6ea;
+      padding: 1.2rem 1.5rem;
+      border-bottom: 2px solid #e2cfb0;
+    }
+
+    .card-header h2 {
+      font-size: 1.6rem;
+      color: #2c5e2e;
+    }
+
+    .card-body {
+      padding: 1.5rem;
+    }
+
+    .feature-list {
+      list-style: none;
+      margin: 1rem 0;
+    }
+
+    .feature-list li {
+      margin-bottom: 0.7rem;
+      padding-left: 1.8rem;
+      position: relative;
+    }
+
+    .feature-list li::before {
+      content: "✈️";
+      position: absolute;
+      left: 0;
+    }
+
+    .highlight-box {
+      background: #fdf3e0;
+      border-radius: 20px;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-left: 5px solid #d4af37;
+    }
+
+    .safety-note {
+      background: #1f4d32;
+      color: #fff7e8;
+      border-radius: 24px;
+      padding: 1rem;
+      margin: 1rem 0;
+      text-align: center;
+    }
+
+    .btn-home {
+      display: inline-block;
+      background: #d4af37;
+      color: #1f3f2c;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.7rem 1.5rem;
+      border-radius: 60px;
+      font-size: 1rem;
+      transition: 0.2s;
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    .btn-home:hover {
+      background: #c4a230;
+      transform: scale(1.02);
+    }
+
+    /* PHOTO GALLERY - EQUAL SIZED IMAGES */
+    .photo-gallery-section {
+      background: #efe4d2;
+      border-radius: 28px;
+      margin: 1rem 2rem 2rem 2rem;
+      padding: 1.5rem;
+      text-align: center;
+      border: 2px dashed #c1aa7a;
+    }
+
+    .photo-gallery-section h3 {
+      color: #5a3e28;
+      margin-bottom: 0.5rem;
+    }
+
+    .photo-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+
+    .photo-card {
+      background: #fffcf5;
+      width: 260px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .photo-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* CRITICAL: Makes all images equal size */
+    .photo-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .photo-caption {
+      padding: 0.75rem;
+      background: white;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #5a3e28;
+      text-align: center;
+    }
+
+    footer {
+      background: #f2ede3;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+      color: #6b5a44;
+      border-top: 1px solid #e2d5c2;
+      margin-top: 1rem;
+    }
+
+    .distance-info {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin: 1rem 0;
+    }
+
+    .distance-badge {
+      background: #eef2e6;
+      padding: 0.3rem 0.8rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+<div class="airport-container">
+  <!-- Hero Section -->
+  <div class="airport-hero">
+    <h1>✈️ Hotels Near Douala Airport 🏨</h1>
+    <p>Convenient, luxurious, and safe accommodation just minutes from Douala International Airport. Start your Cameroon adventure with comfort and peace of mind.</p>
+    <div class="safety-badge">🇨🇲 SAFE, SECURE & WELCOMING – YOUR HOME IN CAMEROON 🇨🇲</div>
+  </div>
+
+  <!-- Navigation Links (all pages added) -->
+  <div class="nav-menu">
+    <ul>
+      <li class="page_item page-item-386"><a href="../index-eng.html">Welcome to Hôtel Akwa Palace Douala</a></li>
+      <li class="page_item page-item-407"><a href="../attraction-eng.html">Attractions</a></li>
+      <li class="page_item page-item-397"><a href="../contact.html">Contact us</a></li>
+      <li class="page_item page-item-398"><a href="../FAQ-eng.html">FAQ</a></li>
+      <li class="page_item page-item-401"><a href="../photos.html">Legal Notice</a></li>
+      <li class="page_item page-item-400"><a href="../location-eng.html">Location</a></li>
+      <li class="page_item page-item-395"><a href="../events-eng.html">Meetings & Events</a></li>
+      <li class="page_item page-item-405"><a href="../offer.html">Offers</a></li>
+      <li class="page_item page-item-402"><a href="../photos.html">Photos</a></li>
+      <li class="page_item page-item-402"><a href="best-beaches-in-cameroon.html">CEO beaches</a></li>
+      <li class="page_item page-item-390"><a href="../kitchen-eng.html">Restaurant</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="two-columns">
+    <!-- Left Column: Hotel Info -->
+    <div class="info-card">
+      <div class="card-header">
+        <h2>🏆 Top Choice: Akwa Palace Hotel</h2>
+      </div>
+      <div class="card-body">
+        <p><strong>Akwa Palace Hotel</strong> is the premier accommodation near Douala International Airport. Located just <strong>15 minutes away</strong> with reliable transfers available 24/7.</p>
+        
+        <div class="distance-info">
+          <span class="distance-badge">✈️ 15 min from airport</span>
+          <span class="distance-badge">🚗 24/7 shuttle service</span>
+          <span class="distance-badge">🛡️ Secure parking</span>
+        </div>
+
+        <ul class="feature-list">
+          <li><strong>Luxury comfort</strong> – 5-star suites with premium amenities</li>
+          <li><strong>24/7 airport transfers</strong> – Safe, professional drivers</li>
+          <li><strong>On-site restaurant</strong> – International & Cameroonian cuisine</li>
+          <li><strong>Business center</strong> – Perfect for business travelers</li>
+        </ul>
+
+        <div class="highlight-box">
+          <p>🌟 <strong>Why travelers choose Akwa Palace:</strong> After a long flight, nothing beats a warm welcome. Our staff speaks English, French, and German. We monitor flight delays and adjust transfers accordingly. Your safety and comfort are guaranteed.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Safety & Cameroon -->
+    <div class="info-card">
+      <div class="card-header">
+        <h2>🇨🇲 Safe & Beautiful Cameroon</h2>
+      </div>
+      <div class="card-body">
+        <p><strong>Cameroon is waiting for you</strong> – a country of stunning diversity, warm people, and unforgettable experiences. From the vibrant streets of Douala to the breathtaking beaches of Kribi and the wildlife of national parks.</p>
+        
+        <div class="safety-note">
+          <p>✔️ <strong>YOUR SAFETY IS GUARANTEED</strong> ✔️</p>
+          <p style="font-size: 0.9rem;">Douala Airport has 24/7 security. Akwa Palace Hotel provides private, secure transfers. Tourist police patrol all major areas. Thousands of international travelers visit safely every year.</p>
+        </div>
+        
+        <p><strong>Nearby attractions from your hotel:</strong> Visit the Douala Maritime Museum, La Nouvelle Liberté statue, or explore local markets with trusted hotel guides.</p>
+        
+        <div style="text-align: center; margin-top: 1rem;">
+          <a href="/eng/index-eng.html" class="btn-home">🏠 HOME-PAGE-HERE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PHOTO GALLERY - EQUAL SIZED IMAGES (bl2.jpg and bl3.jpg added) -->
+  <div class="photo-gallery-section">
+    <h3>📸 Hotels Near Douala Airport – Photo Gallery 📸</h3>
+    <p>Luxury accommodation, comfortable rooms, and the beauty of Cameroon.</p>
+    
+    <div class="photo-grid">
+      <!-- Photo 1: bl2.jpg -->
+      <div class="photo-card">
+        <img src="../../images/bl2.jpg" alt="Akwa Palace Hotel luxury room near Douala Airport" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22260%22 height=%22180%22%3E%3Crect width=%22260%22 height=%22180%22 fill=%22%23d4c4a8%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236b4c2c%22 font-size=%2212%22%3E🖼️ bl2.jpg%3C/text%3E%3C/svg%3E';">
+        <div class="photo-caption">🛏️ Luxury Suite – Akwa Palace Hotel</div>
+      </div>
+      
+      <!-- Photo 2: bl3.jpg -->
+      <div class="photo-card">
+        <img src="../../images/bl3.jpg" alt="Hotel exterior and pool near Douala International Airport" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22260%22 height=%22180%22%3E%3Crect width=%22260%22 height=%22180%22 fill=%22%23d4c4a8%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236b4c2c%22 font-size=%2212%22%3E🖼️ bl3.jpg%3C/text%3E%3C/svg%3E';">
+        <div class="photo-caption">🏊 Rooftop Pool & Airport View</div>
+      </div>
+      
+      <!-- Photo 3: additional airport transfer image (placeholder elegance) -->
+      <div class="photo-card">
+        <img src="../../images/b1.jpg" alt="Airport transfer service from Douala International Airport" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22260%22 height=%22180%22%3E%3Crect width=%22260%22 height=%22180%22 fill=%22%23d4c4a8%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236b4c2c%22 font-size=%2212%22%3E🚗 Airport Transfer%3C/text%3E%3C/svg%3E';">
+        <div class="photo-caption">🚗 24/7 Airport Shuttle Service</div>
+      </div>
+    </div>
+    
+    <p style="margin-top: 1rem; font-size: 0.8rem; background: #f6efdf; display: inline-block; padding: 0.3rem 1rem; border-radius: 50px;">
+      📌 <strong>Equal image size guaranteed</strong> – All photos are 180px height with object-fit: cover
+    </p>
+  </div>
+
+  <!-- Additional Info: Other Hotels & Safety Tips -->
+  <div style="margin: 0 2rem 1.5rem 2rem;">
+    <div style="background: #fcf8f0; border-radius: 28px; padding: 1.2rem 1.5rem;">
+      <h3 style="color: #2c5e2e;">✨ More Hotels Near Douala Airport (Safe & Reliable) ✨</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 1.2rem; margin-top: 0.8rem;">
+        <div style="flex: 1; min-width: 180px;">
+          <p><strong>🏨 Hotel La Falaise</strong><br>15 min from airport<br>Secure & comfortable</p>
+        </div>
+        <div style="flex: 1; min-width: 180px;">
+          <p><strong>🏨 StarLand Hotel</strong><br>10 min from airport<br>Business-friendly</p>
+        </div>
+        <div style="flex: 1; min-width: 180px;">
+          <p><strong>🏨 Sphinx Hotel</strong><br>12 min from airport<br>Affordable luxury</p>
+        </div>
+      </div>
+      <div style="background: #eef3e6; border-radius: 18px; padding: 0.8rem; margin-top: 1rem; text-align: center;">
+        <p>🛡️ <strong>Airport Safety Guarantee:</strong> All recommended hotels provide monitored transfers. Douala International Airport has dedicated tourist assistance. Your journey in Cameroon starts safely.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 — Hotels Near Douala Airport | Akwa Palace Hotel & Cameroon Travel Guide</p>
+    <p>🛫 <strong>Your safety is guaranteed</strong> – Stay at trusted hotels near Douala International Airport and experience the warmth of Cameroon.</p>
+    <p>📸 Photos: bl2.jpg, bl3.jpg, b1.jpg – All images automatically equal size (180px height, object-fit: cover)</p>
+    <p style="margin-top: 6px;">🔗 <a href="../index-eng.html" style="color: #946b34;">Welcome to Hôtel Akwa Palace</a> | <a href="../attraction-eng.html" style="color: #946b34;">Attractions</a> | <a href="../contact.html" style="color: #946b34;">Contact</a> | <a href="../FAQ-eng.html" style="color: #946b34;">FAQ</a></p>
+  </footer>
+</div>
+
+<script>
+  (function() {
+    console.log("✅ Hotels Near Douala Airport page loaded");
+    console.log("📸 Image paths: ../../images/bl2.jpg and ../../images/bl3.jpg");
+    console.log("🖼️ All images have equal size via CSS: height:180px, object-fit:cover");
+    
+    // Check if images load
+    const images = document.querySelectorAll('.photo-card img');
+    images.forEach(img => {
+      img.addEventListener('error', function() {
+        console.log(`⚠️ Image not found: ${this.src}`);
+        console.log(`   → Make sure the file exists at: ${this.src}`);
+        console.log(`   → Folder structure: HTML is in "ceo-pages/", images are in "images/" (one level up then images folder)`);
+      });
+    });
+  })();
+</script>
+</body>
+</html>

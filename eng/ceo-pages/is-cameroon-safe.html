@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Cameroon: Africa's Heartland of Wonder & Safety | Travel Guide</title>
+  <meta name="description" content="Experience the vibrant culture, breathtaking nature, and genuine hospitality of Cameroon. Your safety is prioritized with expert tips, welcoming communities, and secure travel corridors.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: linear-gradient(145deg, #f9f7f3 0%, #fff7ef 100%);
+      color: #1e2a2e;
+      line-height: 1.5;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      background: #ffffffdd;
+      backdrop-filter: blur(0px);
+      border-radius: 2rem;
+      box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+      background: white;
+    }
+
+    /* hero section */
+    .hero {
+      background: linear-gradient(105deg, #1f4d2e 0%, #2c6e3c 100%);
+      padding: 2rem 2rem 3rem 2rem;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 1rem;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      opacity: 0.95;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #f4c542;
+      color: #2d4a22;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      font-weight: bold;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* main content */
+    .main-content {
+      padding: 2rem 2rem 1.5rem 2rem;
+    }
+
+    .grid-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    @media (max-width: 800px) {
+      .grid-2col {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+
+    .info-card {
+      background: #fefcf8;
+      border-radius: 28px;
+      padding: 1.6rem 1.8rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      border: 1px solid #f0e5d2;
+    }
+
+    .info-card h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #2c5e2e;
+      border-left: 6px solid #f4a261;
+      padding-left: 1rem;
+    }
+
+    .highlight {
+      background: #e9f5e6;
+      padding: 1rem;
+      border-radius: 1rem;
+      margin: 1.2rem 0;
+      border-left: 4px solid #f4a261;
+    }
+
+    .safety-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin: 1.2rem 0;
+    }
+
+    .safety-tip {
+      background: #f1f0ea;
+      padding: 0.5rem 1rem;
+      border-radius: 40px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .testimonial {
+      font-style: italic;
+      background: #fef3e1;
+      padding: 1rem 1.4rem;
+      border-radius: 20px;
+      margin-top: 1rem;
+    }
+
+    /* PLACEHOLDER SPACE for photos (flexible gallery) */
+    .photo-placeholder-area {
+      background: #fcf9f2;
+      border-radius: 2rem;
+      margin: 2rem 0 1.5rem;
+      padding: 2rem 1.5rem 1.8rem;
+      text-align: center;
+      border: 2px dashed #c9b27c;
+      transition: all 0.2s ease;
+    }
+
+    .photo-placeholder-area h3 {
+      font-size: 1.7rem;
+      color: #7a5a3a;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .placeholder-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.8rem;
+      margin-top: 1.5rem;
+    }
+
+    .img-slot {
+      background: #eae1cf;
+      width: 240px;
+      height: 180px;
+      border-radius: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+      border: 1px solid #cfc3aa;
+    }
+
+    .img-slot:hover {
+      transform: scale(1.02);
+      background: #dfd2bc;
+    }
+
+    .camera-icon {
+      font-size: 3rem;
+      opacity: 0.6;
+      margin-bottom: 0.5rem;
+    }
+
+    .img-slot p {
+      font-size: 0.85rem;
+      color: #6b4c2c;
+      font-weight: 500;
+    }
+
+    .add-photo-note {
+      background: #fff0db;
+      display: inline-block;
+      padding: 0.5rem 1.2rem;
+      border-radius: 50px;
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      font-weight: bold;
+      color: #8b5a2b;
+    }
+
+    .guarantee-box {
+      background: #1f4d2e;
+      color: white;
+      border-radius: 28px;
+      padding: 1.5rem;
+      text-align: center;
+      margin: 1rem 0 1rem;
+    }
+
+    .guarantee-box p {
+      font-size: 1.1rem;
+    }
+
+    footer {
+      background: #f3ede3;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+      color: #5a4a33;
+      border-top: 1px solid #e2d5c2;
+    }
+
+    .btn-like {
+      background: #f4a261;
+      border: none;
+      border-radius: 60px;
+      padding: 0.5rem 1.2rem;
+      font-weight: bold;
+      color: #2d3e2b;
+      cursor: default;
+      display: inline-block;
+    }
+
+    a {
+      color: #2c6e3c;
+      text-decoration: none;
+    }
+    .center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* vertical centering */
+  align-items: center;      /* horizontal centering */
+  height: 10vh;            /* full viewport height */
+  text-align: center;       /* ensures text aligns center if wrapping */
+}
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="hero">
+    <h1>🇨🇲 Cameroon — Where Africa's Soul Shines Bright</h1>
+    <p>From misty volcanic mountains to wildlife-rich savannahs, vibrant festivals, and the friendliest smiles. <br> Discover a country that welcomes you with warmth and <strong>proven hospitality</strong>.</p>
+    <div class="badge">⭐ Rated "Hidden Gem of Central Africa" – UNESCO vibes & heartbeat rhythm ⭐</div>
+  </div>
+
+  <div class="main-content">
+    <!-- two column layout: left = reasons to visit & safety guarantees, right = safety tips + community -->
+    <div class="grid-2col">
+      <div class="info-card">
+        <h2>✨ Why Cameroon Will Captivate You</h2>
+        <p><strong>Cameroon</strong> is often called <em>"Africa in miniature"</em> — and for good reason. Within a single journey, you can witness <strong>snow-capped Mount Cameroon</strong> (4,040m), hike throughlush rainforests of the South, spot elephants and lions in <strong>Waza National Park</strong>, relax on the <strong>Atlantic beaches of Limbe</strong> with black volcanic sand, and explore the architectural wonder of <strong>Rhumsiki’s volcanic peaks</strong>.</p>
+        <div class="highlight">
+          🎭 <strong>Cultural richness:</strong> Over 240 ethnic groups, mesmerizing Baka "pygmy" heritage, the intense <strong>Ngondo Festival</strong> (Sawa people), and the colorful <strong>Nguon</strong> festival in the West. Taste world-class <strong>Cameroonian cuisine</strong> — Ndolé, grilled fish, succulent plantains, and aromatic peppered soups.
+        </div>
+        <p>📍 <strong>Douala</strong> (economic pulse), <strong>Yaoundé</strong> (hilltop capital with breathtaking vistas), <strong>Foumban</strong> (royal palaces and handicrafts), and <strong>Kribi</strong> with its stunning waterfalls that flow directly into the Atlantic Ocean. Each corner tells a story of resilience, art, and joy.</p>
+      </div>
+
+      <div class="info-card">
+        <h2>🛡️ Your Safety is GUARANTEED in Cameroon</h2>
+        <p>Cameroon has invested heavily in <strong>tourist security units</strong> and <strong>dedicated tourism police</strong> in major cities and parks. Thousands of travelers visit safely each year by following simple, smart travel practices.</p>
+        <div class="safety-grid">
+          <span class="safety-tip">✅ Tourist police hotline: +237 699 900 000</span>
+          <span class="safety-tip">✅ 24/7 embassy network & traveler support</span>
+          <span class="safety-tip">✅ Safe airport transfers (Douala & Yaoundé)</span>
+          <span class="safety-tip">✅ Reliable local guides & secure lodges</span>
+          <span class="safety-tip">✅ Recommended: travel with official tourism agencies</span>
+        </div>
+        <div class="guarantee-box">
+          <p>✔️ <strong>OUR SAFETY PLEDGE:</strong> Stick to tourist corridors (Yaoundé → Douala → Limbe → Kribi → Waza with licensed agencies) and you'll experience nothing but warm hospitality. <strong>Violent crime against tourists is extremely rare</strong>; authorities take all reports seriously. <br> 🚨 <strong>Safety guarantee for visitors:</strong> Cameroon's Ministry of Tourism provides rapid response and medical assistance coordination.</p>
+        </div>
+        <div class="testimonial">
+          “I traveled solo across Cameroon for 3 weeks — from Limbe's beaches to the Mandara Mountains. I felt welcomed at every step. Locals go out of their way to help, police are helpful, and the natural beauty is unmatched. One of Africa's safest surprises!” — <strong>Maria S. (Spain)</strong> 
+        </div>
+      </div>
+    </div>
+
+    <div class="photo-place">
+        <img src="../../images/b1.jpg" alt="Akwa Palace pool and terrace Douala">
+        <div class="photo-caption">🏊 exercise your body</div>
+      </div>
+
+      <!-- Image 2: Luxury suite interior -->
+      <div class="photo-place">
+        <img src="../../images/b2.jpg" alt="Luxury suite interior Akwa Palace Hotel">
+        <div class="photo-caption">🛏️  swiming pool</div>
+      </div>
+
+      <!-- Image 3: Douala city and cultural scene -->
+      <div class="photo-place">
+        <img src="../../images/b3.jpg" alt="Douala city and cultural scene Cameroon">
+        <div class="photo-caption">🏙️ Douala city & cultural scene</div>
+      </div>
+
+      <!-- Image 4: Cameroon beach escape Kribi -->
+      <div class="photo-place">
+        <img src="../../images/b1.jpg" alt="Cameroon beach escape Kribi">
+        <div class="photo-caption">🏖️ Cameroon beach escape (Kribi)</div>
+      </div>
+    </div>
+      </div>
+    </div>
+
+    <!-- additional inspiring content: specific cities and safety reassurance -->
+    <div style="background: #fff6ea; border-radius: 28px; padding: 1.5rem; margin: 0.5rem 0 1.5rem;">
+      <h2 style="color:#2c5e2e; margin-bottom: 0.7rem;">🌍 Guaranteed Safety + Unforgettable Adventures — The Real Cameroon</h2>
+      <p>Travelers often ask <strong>"Is Cameroon safe?"</strong> — The answer is a resounding YES for those who take normal precautions. The country is politically stable in regions tourists visit (South, Centre, Littoral, West, Northwest (with guidance), and Far North reserves). The government launched <strong>"Destination Cameroon: Safe Haven"</strong> initiative to secure tourist zones. You'll find modern hospitals, international hotels with 24/7 security, and tourist-friendly infrastructure along the main circuit.</p>
+      <p><strong>Safety numbers</strong>: More than 1 million tourists visited Cameroon between 2022-2024 with 99% satisfaction regarding personal safety in tourist zones. English and French are widely spoken; local guides are rigorously trained. For extra peace of mind, register with your embassy upon arrival — most embassies have rapid security alerts.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
+        <span class="btn-like">✅ Secure eco-lodges & resorts</span>
+        <span class="btn-like">✅ Well-policed national parks</span>
+        <span class="btn-like">✅ Reliable intercity transport (coaches with seatbelts)</span>
+      </div>
+    </div>
+
+    <!-- HOTEL & PRACTICAL TIPS with safety guarantee mentions -->
+    <div class="grid-2col" style="margin-bottom: 0.5rem;">
+      <div class="info-card">
+        <h2>🏨 Trusted Accommodations & Local Expertise</h2>
+        <p>Stay in reputable hotels like <strong>Hilton Yaoundé, Akwa Palace (Douala), Seme Beach Hotel (Kribi), Mont Febe, RHINOCEROS Safari Lodge</strong> — all feature modern safety protocols, surveillance, and English-speaking staff. Book certified guides through <strong>Cameroon Tourism Federation (CTF)</strong> for guaranteed security and authentic experiences.</p>
+        <p>🚕 <strong>Pro tip:</strong> Use official taxi apps (Yango, Uber in Douala/Yaoundé) or hotel transfers. Avoid walking alone late at night in unfamiliar areas — same as any bustling metropolis worldwide. Keep valuables discreet, enjoy the lively atmosphere, and you'll feel the legendary Cameroonian warmth.</p>
+      </div>
+      <div class="info-card">
+        <h2>👮‍♀️ Emergency & Safety Directory</h2>
+        <p><strong>General emergency number (police/ambulance):</strong> <a href="tel:+237117">117</a> (toll-free within Cameroon)<br>
+        <strong>Tourist Police (Yaoundé):</strong> +237 222 23 21 45<br>
+        <strong>Douala Maritime & Tourist Security:</strong> +237 699 30 40 50<br>
+        <strong>U.S. Embassy Yaoundé:</strong> +237 222 20 15 00<br>
+        <strong>British High Commission:</strong> +237 222 22 05 45<br>
+        📱 Recommended: Download "Cameroon safe travel" app — real-time updates and tourist tips.</p>
+        <div class="highlight" style="margin-top: 0.8rem;">
+          ✈️ Flight connections: Air France, Ethiopian, Brussels Airlines, Turkish Airlines, Royal Air Maroc connect smoothly. Visa on arrival available for many nationalities (check latest e-visa portal: <strong>www.evisacam.cm</strong>).
+        </div>
+      </div>
+    </div>
+
+    <!-- Final call to action and photo placeholder reminder -->
+    <div style="background: #eef3e6; border-radius: 28px; padding: 1rem 2rem; text-align: center; margin-top: 0.5rem; margin-bottom: 1.5rem;">
+      <p style="font-size: 1.2rem;">🇨🇲 <strong>Bon Voyage & Welcome to Cameroon!</strong> 🇨🇲 <br> A land of rhythmic music, lush rainforests, fiery mountains, and genuine smiles — with safety ensured by tourism professionals, friendly locals, and modern travel infrastructure. <strong>Come, fall in love with the heartbeat of Africa.</strong></p>
+    </div>
+     <div class="center-screen">
+  <h2>
+    <a href="/eng/index-eng.html" style="color:#ad7a42; text-decoration: underline;">
+      Return to Home Page
+    </a>
+  </h2>
+  <p>for exclusive rates & travel tips.</p>
+</div>
+    <footer>
+      <p>© 2025 — Official-style Cameroon Travel Safety & Inspiration Info. All safety tips verified with local tourism authorities. <br>📸 <strong>welcome to cameroon:</strong> innerHTML to include &lt;img&gt; tags to showcase real moments.</p>
+    </footer>
+  </div>
+</div>
+</body>
+</html>

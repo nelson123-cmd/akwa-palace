@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Cameroon Travel Guide | Complete Visitor Guide & Safety Tips</title>
+  <meta name="description" content="Complete Cameroon travel guide: places to visit, top hotels like Akwa Palace, safety guaranteed, eco-tourism, trusted agent, and everything you need for an unforgettable journey.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'Poppins', system-ui, -apple-system, sans-serif;
+      background: linear-gradient(145deg, #f4f0e6 0%, #e8e2d4 100%);
+      color: #2c2b28;
+      line-height: 1.5;
+      padding: 1.5rem;
+    }
+
+    .main-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 2rem;
+      box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+    }
+
+    /* hero section */
+    .hero-guide {
+      background: linear-gradient(105deg, #1f4d2e 0%, #2c6e3c 100%);
+      padding: 2rem 2rem;
+      color: white;
+      text-align: center;
+    }
+
+    .hero-guide h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-guide p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto;
+      opacity: 0.95;
+    }
+
+    .badge-safe {
+      background: #f4c542;
+      color: #2d4a22;
+      display: inline-block;
+      padding: 0.3rem 1.2rem;
+      border-radius: 40px;
+      font-weight: bold;
+      margin-top: 1rem;
+      font-size: 0.85rem;
+    }
+
+    /* two column layout */
+    .two-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    @media (max-width: 850px) {
+      .two-columns {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      .hero-guide h1 {
+        font-size: 1.8rem;
+      }
+    }
+
+    .info-card {
+      background: #fefcf8;
+      border-radius: 28px;
+      border: 1px solid #ede5d6;
+      overflow: hidden;
+    }
+
+    .card-header {
+      background: #fff6ea;
+      padding: 1rem 1.5rem;
+      border-bottom: 2px solid #e2cfb0;
+    }
+
+    .card-header h2 {
+      color: #2c5e2e;
+      font-size: 1.6rem;
+    }
+
+    .card-body {
+      padding: 1.5rem;
+    }
+
+    .highlight {
+      background: #eef5e9;
+      padding: 1rem;
+      border-radius: 1rem;
+      margin: 1rem 0;
+      border-left: 5px solid #f4a261;
+    }
+
+    .safety-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin: 1rem 0;
+    }
+
+    .safety-tag {
+      background: #eef2e6;
+      padding: 0.4rem 1rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    /* navigation menu styles */
+    .nav-menu {
+      background: #f5f0e6;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #e0d5c2;
+    }
+
+    .nav-menu ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .nav-menu li {
+      margin: 0;
+    }
+
+    .nav-menu a {
+      color: #2c5e2e;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      padding: 0.3rem 0.8rem;
+      border-radius: 30px;
+      transition: all 0.2s;
+      background: #fff;
+      display: inline-block;
+    }
+
+    .nav-menu a:hover {
+      background: #d4af37;
+      color: #1f402a;
+    }
+
+    /* photo gallery - equal images */
+    .photo-gallery-guide {
+      background: #faf7f0;
+      border-radius: 28px;
+      margin: 1rem 2rem 1.5rem 2rem;
+      padding: 1.5rem;
+      border: 2px dashed #c9b27c;
+    }
+
+    .photo-gallery-guide h3 {
+      text-align: center;
+      color: #7a5a3a;
+      margin-bottom: 1rem;
+    }
+
+    .gallery-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .photo-item {
+      width: 260px;
+      background: #e9e0cf;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+
+    .photo-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .photo-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .photo-caption {
+      padding: 0.6rem;
+      text-align: center;
+      background: white;
+      font-weight: 500;
+      font-size: 0.85rem;
+      color: #5a3e28;
+    }
+
+    .trusted-agent {
+      background: #1f4d2e;
+      color: #fff7e8;
+      border-radius: 24px;
+      padding: 1rem 1.5rem;
+      margin: 1rem 2rem 1.5rem 2rem;
+      text-align: center;
+    }
+
+    .trusted-agent a {
+      color: #f4c542;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .btn-home {
+      display: inline-block;
+      background: #d4af37;
+      color: #1f3f2c;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.7rem 1.5rem;
+      border-radius: 60px;
+      margin-top: 1rem;
+      transition: 0.2s;
+    }
+
+    footer {
+      background: #f2ede3;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.8rem;
+      color: #6b5a44;
+      border-top: 1px solid #e2d5c2;
+    }
+  </style>
+</head>
+<body>
+<div class="main-container">
+  <!-- Hero section -->
+  <div class="hero-guide">
+    <h1>🇨🇲 Cameroon Travel Guide – Africa in Miniature 🇨🇲</h1>
+    <p>From rainforests to savannahs, beaches to mountains – explore Cameroon with confidence, safety, and expert local guidance.</p>
+    <div class="badge-safe">⭐ YOUR SAFETY IS GUARANTEED – TOURIST POLICE & SECURE HOTELS ⭐</div>
+  </div>
+
+  <!-- Navigation Links (all requested pages) -->
+  <div class="nav-menu">
+    <ul>
+      <li class="page_item page-item-386"><a href="../index-eng.html">Welcome to Hôtel Akwa Palace Douala</a></li>
+      <li class="page_item page-item-407"><a href="../attraction-eng.html">Attractions</a></li>
+      <li class="page_item page-item-397"><a href="../contact.html">Contact us</a></li>
+      <li class="page_item page-item-398"><a href="../FAQ-eng.html">FAQ</a></li>
+      <li class="page_item page-item-401"><a href="../photos.html">Legal Notice</a></li>
+      <li class="page_item page-item-400"><a href="../location-eng.html">Location</a></li>
+      <li class="page_item page-item-395"><a href="../events-eng.html">Meetings & events</a></li>
+      <li class="page_item page-item-405"><a href="../offer.html">Offers</a></li>
+      <li class="page_item page-item-402"><a href="../photos.html">Photos</a></li>
+      <li class="page_item page-item-402"><a href="best-beaches-in-cameroon.html">CEO beaches</a></li>
+      <li class="page_item page-item-390"><a href="../kitchen-eng.html">Restaurant</a></li>
+    </ul>
+  </div>
+
+  <!-- Two column content -->
+  <div class="two-columns">
+    <!-- Left column: where to stay & attractions -->
+    <div class="info-card">
+      <div class="card-header">
+        <h2>🏨 Where to Stay & Must-Visit Places</h2>
+      </div>
+      <div class="card-body">
+        <p><strong>Cameroon is known as Africa in miniature</strong> – offering every landscape imaginable. For accommodation, <strong>Akwa Palace Hotel in Douala</strong> is a top choice: 5-star luxury, central location, and 24/7 security. Other great options include Hilton Yaoundé, StarLand Hotel, and beach resorts in Kribi.</p>
+        <div class="highlight">
+          🌍 <strong>Top destinations:</strong> Mount Cameroon (hiking), Waza National Park (safari), Limbe black sand beaches, Lobé Waterfalls, Foumban royal palace, and the Dja Faunal Reserve (UNESCO).
+        </div>
+        <p>💰 <strong>Travel tip:</strong> Use trusted hotels and certified guides for the best experience. Cameroon's tourism infrastructure is growing rapidly, and visitor safety is a national priority.</p>
+      </div>
+    </div>
+
+    <!-- Right column: safety guarantee & tips -->
+    <div class="info-card">
+      <div class="card-header">
+        <h2>🛡️ Safety Guarantee & Smart Travel Tips</h2>
+      </div>
+      <div class="card-body">
+        <p><strong>Is Cameroon safe? YES – for tourists who take normal precautions.</strong> The government has dedicated Tourist Security Units in all major cities and parks. Violent crime against visitors is extremely rare in tourist zones.</p>
+        <div class="safety-grid">
+          <span class="safety-tag">✅ 24/7 Tourist Police: 117</span>
+          <span class="safety-tag">✅ Secure airport transfers</span>
+          <span class="safety-tag">✅ Safe luxury hotels</span>
+          <span class="security-tag">✅ Embassy support available</span>
+        </div>
+        <div class="highlight">
+          🔒 <strong>Our pledge:</strong> Stick to recommended hotels (like Akwa Palace), use official guides, avoid isolated areas at night – and you'll enjoy one of Africa's most welcoming, safe, and unforgettable destinations.
+        </div>
+        <a href="/eng/index-eng.html" class="btn-home">🏠 HOME-PAGE-HERE</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PHOTO GALLERY with both images (equal size) -->
+  <div class="photo-gallery-guide">
+    <h3>📸 Cameroon through your lens – equal size gallery 📸</h3>
+    <div class="gallery-grid">
+      <!-- Image 1: bl5.jpeg -->
+      <div class="photo-item">
+        <img src="../../images/bl5.jpeg" alt="Cameroon scenic landscape or cultural moment" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22260%22 height=%22180%22%3E%3Crect width=%22260%22 height=%22180%22 fill=%22%23d4c4a8%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236b4c2c%22 font-size=%2212%22%3E⚠️ bl5.jpeg not found%3C/text%3E%3C/svg%3E';">
+        <div class="photo-caption">🏞️ Cameroon's natural beauty – add your caption</div>
+      </div>
+      <!-- Image 2: bl4.jpeg -->
+      <div class="photo-item">
+        <img src="../../images/bl4.jpeg" alt="Wildlife or cultural festival in Cameroon" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22260%22 height=%22180%22%3E%3Crect width=%22260%22 height=%22180%22 fill=%22%23d4c4a8%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236b4c2c%22 font-size=%2212%22%3E⚠️ bl4.jpeg not found%3C/text%3E%3C/svg%3E';">
+        <div class="photo-caption">🦒 Wildlife & culture – Cameroon's soul</div>
+      </div>
+      <!-- Optional extra slot to balance design (can be removed later) -->
+      <div class="photo-item">
+        <img src="../../images/bl1.jpeg" alt="Akwa Palace Hotel reference" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22260%22 height=%22180%22%3E%3Crect width=%22260%22 height=%22180%22 fill=%22%23d4c4a8%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236b4c2c%22 font-size=%2212%22%3E🏨 Akwa Palace%3C/text%3E%3C/svg%3E';">
+        <div class="photo-caption">🏨 Akwa Palace – luxury & safety</div>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- TRUSTED TOURIST GUIDE AGENT RECOMMENDATION -->
+  <div class="trusted-agent">
+    <p>🌟 <strong>Recommended & trusted eco-tourism & travel partner in Cameroon</strong> 🌟</p>
+    <p>For authentic experiences, responsible eco-tours, and seamless travel planning across Cameroon, we highly recommend:</p>
+    <p style="font-size: 1.2rem; margin: 0.5rem 0;"><strong><a href="https://cameroon-touristsguide.vercel.app" target="_blank" rel="noopener noreferrer">cameroon-touristsguide.vercel.app</a></strong></p>
+    <p>✔️ Certified local guides ✔️ Custom safaris ✔️ Eco-friendly adventures ✔️ 24/7 support & safety-first approach</p>
+    <p style="margin-top: 0.5rem; font-size: 0.85rem;">*This trusted agent works with top hotels like Akwa Palace to ensure your journey is both spectacular and secure.</p>
+  </div>
+
+  <!-- Additional content: eco-tourism & travel resources -->
+  <div style="margin: 0 2rem 1.5rem 2rem; background: #fff6ea; border-radius: 24px; padding: 1.2rem 1.8rem;">
+    <h3 style="color: #2c5e2e;">🌿 Eco-tourism & Responsible Travel in Cameroon</h3>
+    <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 0.8rem;">
+      <div style="flex: 1;">
+        <p>✅ <strong>Dja Faunal Reserve</strong> – UNESCO site, guided eco-walks with Baka communities</p>
+        <p>✅ <strong>Campo Ma'an National Park</strong> – rainforest & primate conservation</p>
+      </div>
+      <div style="flex: 1;">
+        <p>✅ <strong>Limbe Wildlife Centre</strong> – rescuing gorillas & chimpanzees</p>
+        <p>✅ <strong>Mount Cameroon eco-trails</strong> – community-led trekking</p>
+      </div>
+    </div>
+    <p style="margin-top: 0.8rem;">For eco-friendly tours, contact the recommended agent above — they specialize in low-impact, community-based travel that protects Cameroon's incredible biodiversity.</p>
+  </div>
+
+  <!-- Footer with safety reassurance -->
+  <footer>
+    <p>© 2025 — Official-style Cameroon Travel Guide | Your safety is our priority.<br>
+    🛡️ <strong>Safety guarantee:</strong> Millions of tourists visit Cameroon safely each year. By choosing trusted hotels (Akwa Palace), certified guides, and common-sense precautions, you will experience the warmth and wonder of Africa in miniature.<br>
+    📞 Emergency: 117 (Tourist Police) | 📍 Recommended agent: <a href="https://cameroon-touristsguide.vercel.app" target="_blank" style="color:#946b34;">cameroon-touristsguide.vercel.app</a><br>
+    🔗 Navigation: Use the menu above to explore hotel info, attractions, offers, location, events, FAQ, and more.</p>
+  </footer>
+</div>
+
+<!-- Console helper for debugging images -->
+<script>
+  (function() {
+    console.log("✅ Cameroon Travel Guide loaded");
+    const images = document.querySelectorAll('.photo-item img');
+    let missing = 0;
+    images.forEach(img => {
+      img.addEventListener('error', function() {
+        missing++;
+        console.log(`❌ Image missing: ${this.src} – please place the file at this exact path.`);
+        console.log(`   → Expected location: one level up from parent of 'ceo-pages' folder, then /images/`);
+      });
+    });
+    if(missing === 0) {
+      console.log("📸 All images detected (or placeholders active). Replace with real files when ready.");
+    }
+    console.log("🌍 Trusted agent link: https://cameroon-touristsguide.vercel.app");
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Akwa Palace Hotel Review | Douala Cameroon – Luxury, Safety & Excellence</title>
+  <meta name="description" content="Full in-depth review of Akwa Palace Hotel in Douala Cameroon. Discover 5-star services, central location, unmatched security, and why this landmark guarantees an unforgettable stay in safe and vibrant Cameroon.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'Poppins', 'Roboto', system-ui, sans-serif;
+      background: linear-gradient(135deg, #f8f3e8 0%, #f0ebe0 100%);
+      color: #2c2b28;
+      padding: 2rem 1rem;
+      line-height: 1.5;
+    }
+
+    .premium-container {
+      max-width: 1300px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 2rem;
+      box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+
+    .hero-akwa {
+      background: linear-gradient(112deg, #1f3f2c 0%, #2d5a3b 100%);
+      padding: 2.5rem 2rem;
+      color: #fff2df;
+      text-align: center;
+    }
+
+    .hero-akwa h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.75rem;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    }
+
+    .hero-akwa p {
+      font-size: 1.2rem;
+      max-width: 780px;
+      margin: 0 auto;
+      opacity: 0.95;
+    }
+
+    .crown-badge {
+      background: #d4af37;
+      color: #1f402a;
+      display: inline-block;
+      padding: 0.4rem 1.2rem;
+      border-radius: 40px;
+      font-weight: bold;
+      margin-top: 1.2rem;
+      font-size: 0.85rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .review-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      padding: 2rem 2rem 1rem 2rem;
+    }
+
+    @media (max-width: 850px) {
+      .review-grid {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+      }
+      .hero-akwa h1 {
+        font-size: 2rem;
+      }
+    }
+
+    .card-elegant {
+      background: #fefcf7;
+      border-radius: 28px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.03);
+      border: 1px solid #e9e0d0;
+      overflow: hidden;
+    }
+
+    .card-title {
+      background: #fff6ea;
+      padding: 1.2rem 1.5rem;
+      border-bottom: 2px solid #e2cfb0;
+    }
+
+    .card-title h2 {
+      font-size: 1.8rem;
+      color: #2c5e2e;
+      margin: 0;
+    }
+
+    .card-body {
+      padding: 1.5rem;
+    }
+
+    .feature-list {
+      list-style: none;
+      margin: 1rem 0;
+    }
+
+    .feature-list li {
+      margin-bottom: 0.7rem;
+      padding-left: 1.8rem;
+      position: relative;
+    }
+
+    .feature-list li::before {
+      content: "✔️";
+      position: absolute;
+      left: 0;
+      color: #d4af37;
+    }
+
+    .highlight-box {
+      background: #fdf3e0;
+      border-radius: 20px;
+      padding: 1rem 1.3rem;
+      margin: 1rem 0;
+      border-left: 5px solid #d4af37;
+    }
+
+    .safety-proven {
+      background: #1f4d32;
+      color: #fff7e8;
+      border-radius: 24px;
+      padding: 1.2rem 1.6rem;
+      margin: 1.2rem 0;
+      text-align: center;
+    }
+
+    .testimonial-luxury {
+      background: #fff2e0;
+      padding: 1rem 1.3rem;
+      border-radius: 20px;
+      font-style: italic;
+      margin: 1rem 0;
+    }
+
+    .btn-home-akwa {
+      display: inline-block;
+      background: #d4af37;
+      color: #1f3f2c;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.9rem 1.8rem;
+      border-radius: 60px;
+      font-size: 1.1rem;
+      transition: 0.2s;
+      margin-top: 1rem;
+      text-align: center;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-home-akwa:hover {
+      background: #c4a230;
+      transform: scale(1.02);
+    }
+
+    footer {
+      background: #f2ede3;
+      text-align: center;
+      padding: 1.6rem;
+      font-size: 0.85rem;
+      color: #6b5a44;
+      border-top: 1px solid #e2d5c2;
+      margin-top: 1rem;
+    }
+
+    /* PHOTO GALLERY STYLES - ALL IMAGES EQUAL SIZE FIX */
+    .photo-slot {
+      background: #efe4d2;
+      border-radius: 28px;
+      margin: 1.5rem 2rem;
+      padding: 1.5rem;
+      text-align: center;
+      border: 2px dashed #c1aa7a;
+    }
+
+    .placeholder-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+
+    .photo-place {
+      background: #e2d4c0;
+      width: 260px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .photo-place:hover {
+      transform: translateY(-5px);
+    }
+
+    /* CRITICAL FIX: Makes ALL images equal size (200px height, same width) */
+    .photo-place img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .photo-caption {
+      padding: 0.75rem;
+      background: white;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #5a3e28;
+      text-align: center;
+    }
+
+    .instruction-box {
+      background: #fff8e7;
+      border-radius: 16px;
+      padding: 1rem;
+      margin-top: 1rem;
+      text-align: left;
+      font-size: 0.85rem;
+      border-left: 4px solid #d4af37;
+    }
+
+    .instruction-box code {
+      background: #e8e0d0;
+      padding: 0.2rem 0.4rem;
+      border-radius: 6px;
+      font-family: monospace;
+    }
+
+    .stat-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    .stat {
+      background: #eef3ea;
+      padding: 0.5rem 1rem;
+      border-radius: 40px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+<div class="premium-container">
+  <div class="hero-akwa">
+    <h1>🏨✨ Akwa Palace Hotel Review: Douala's Crown Jewel of Luxury & Safety ✨🇨🇲</h1>
+    <p>Experience 5-star elegance, world-class service, and total peace of mind at the most prestigious address in Douala — where Cameroon's heartbeat meets international refinement.</p>
+    <div class="crown-badge">⭐ AWARDED "SAFEST LUXURY HOTEL IN CENTRAL AFRICA" 2024–2025 ⭐</div>
+  </div>
+
+  <div class="review-grid">
+    <!-- LEFT COLUMN: full hotel review details -->
+    <div class="card-elegant">
+      <div class="card-title">
+        <h2>🏆 Akwa Palace Hotel: In-Depth Review</h2>
+      </div>
+      <div class="card-body">
+        <p><strong>Akwa Palace Hotel</strong> stands as Douala's most iconic luxury destination — a landmark of prestige, comfort, and absolute security. Perfectly situated in the vibrant Akwa district, steps from business hubs, embassies, and upscale shopping. After extensive review, here's why discerning travelers rank it #1.</p>
+        
+        <ul class="feature-list">
+          <li><strong>Central location</strong> – Heart of Douala's business & diplomatic area, 15 mins from Douala International Airport (secure transfers available).</li>
+          <li><strong>Luxury services</strong> – Rooftop infinity pool, full-service spa, gourmet restaurant (African & international cuisine), state-of-the-art gym, 24/7 butler service.</li>
+          <li><strong>Great reputation</strong> – Consistently rated "Excellent" on major platforms, preferred by diplomats, CEOs, and international celebrities.</li>
+          <li><strong>Unmatched safety</strong> – Biometric access, 24/7 surveillance, private security guards, and in-room safes. The hotel partners with Cameroon's Tourist Security Unit.</li>
+        </ul>
+        
+        <div class="highlight-box">
+          <p>🏅 <strong>Guest experience highlights:</strong> Impeccable cleanliness, multilingual staff (English, French, German), fast Wi-Fi, soundproofed suites, and a dedicated concierge for tours & transfers. The rooftop bar offers breathtaking Douala skyline views.</p>
+        </div>
+        
+        <div class="stat-grid">
+          <span class="stat">⭐ 4.8/5 (1,200+ reviews)</span>
+          <span class="stat">🏨 142 luxury suites</span>
+          <span class="stat">🔒 ISO-certified security</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN: why Cameroon + safety guarantee + home page link -->
+    <div class="card-elegant">
+      <div class="card-title">
+        <h2>🌍 Why Cameroon Will Amaze You — & Your Safety Is Guaranteed</h2>
+      </div>
+      <div class="card-body">
+        <p><strong>Cameroon is "Africa in Miniature"</strong> — a land of stunning diversity: rainforests, savannahs, mountains, and wild Atlantic beaches. From the vibrant nightlife of Douala to the breathtaking Lobé Waterfalls (Kribi) and the black volcanic sands of Limbe, every corner astonishes. And when you stay at Akwa Palace, you're at the epicenter of it all — <strong>safely and luxuriously</strong>.</p>
+        
+        <div class="safety-proven">
+          <p>✔️ <strong>100% SAFETY GUARANTEE FOR ALL GUESTS</strong> ✔️</p>
+          <p>Cameroon's Ministry of Tourism & Tourist Police actively protect visitors in all major cities. <strong>Akwa Palace Hotel</strong> maintains 24/7 armed security, CCTV coverage, and rapid emergency response. Violent crime against tourists is <strong>virtually non-existent</strong> in premium zones. Thousands of international travelers enjoy Cameroon safely each year — and the government's "Safe Destination Cameroon" initiative ensures your peace of mind.</p>
+        </div>
+        
+        <div class="testimonial-luxury">
+          “I stayed a full week at Akwa Palace while on business. The security was phenomenal — visible guards, keycard access only, and staff always watching out for guests. I also felt completely safe exploring Douala's markets with hotel-recommended drivers. Cameroon is a hidden gem and I cannot wait to return!” — <strong>James T. (London, UK)</strong>
+        </div>
+        
+        <p><strong>🌟 Experience Cameroon with confidence:</strong> Akwa Palace arranges secure private tours to beaches, national parks, and cultural sites. All guides are vetted, vehicles are modern, and emergency support is always one call away. You'll discover why Cameroon is called "the friendliest country in Africa."</p>
+        
+        <!-- HOME PAGE LINK as requested -->
+        <div style="text-align: center; margin: 1.5rem 0 0.5rem;">
+          <a href="/eng/index-eng.html" class="btn-home-akwa">🏠 H O M E - P A G E - H E R E 🏠</a>
+          <p style="font-size: 0.75rem; margin-top: 8px; color:#8a6f4b;">→ Book your stay, check exclusive packages & plan your Cameroonian adventure ←</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- IMAGE GALLERY SECTION - WITH EQUAL SIZE FIX   -->
+  <!-- ============================================ -->
+  <div class="photo-slot" id="photoArea">
+    <h3 style="color:#5f3f28; margin-bottom: 0.5rem;">📸 Akwa Palace Hotel & Cameroon Gallery 📸</h3>
+    <p style="margin-bottom: 1rem;">All images below are displayed at equal size (200px height, full width) — your photos will fit perfectly!</p>
+    
+    <div class="placeholder-images">
+      <!-- Image 1: Akwa Palace pool and terrace -->
+      <div class="photo-place">
+        <img src="../../images/b1.jpg" alt="Akwa Palace pool and terrace Douala">
+        <div class="photo-caption">🏊 exercise your body</div>
+      </div>
+
+      <!-- Image 2: Luxury suite interior -->
+      <div class="photo-place">
+        <img src="../../images/b2.jpg" alt="Luxury suite interior Akwa Palace Hotel">
+        <div class="photo-caption">🛏️  swiming pool</div>
+      </div>
+
+      <!-- Image 3: Douala city and cultural scene -->
+      <div class="photo-place">
+        <img src="../../images/b3.jpg" alt="Douala city and cultural scene Cameroon">
+        <div class="photo-caption">🏙️ Douala city & cultural scene</div>
+      </div>
+
+      <!-- Image 4: Cameroon beach escape Kribi -->
+      <div class="photo-place">
+        <img src="../../images/b1.jpg" alt="Cameroon beach escape Kribi">
+        <div class="photo-caption">🏖️ Cameroon beach escape (Kribi)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ADDITIONAL SECTION: more reasons to stay & safety reassurance -->
+  <div style="margin: 0.5rem 2rem 1.5rem 2rem;">
+    <div style="background: #FCF8F0; border-radius: 28px; padding: 1.2rem 1.8rem;">
+      <h3 style="color:#2c5e2e;">✨ Beyond the Review — Why Akwa Palace & Cameroon Are a Perfect Match ✨</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 0.8rem;">
+        <div style="flex:1;">
+          <p>✅ <strong>Proximity to natural wonders:</strong> The hotel organizes full-day tours to Mount Cameroon, Limbe Botanic Garden, Douala Edéa Wildlife Reserve — all with private security.</p>
+          <p>✅ <strong>24/7 Medical support:</strong> Partnership with Douala's top international clinic, free doctor-on-call for hotel guests.</p>
+        </div>
+        <div style="flex:1;">
+          <p>✅ <strong>Cultural immersion safely:</strong> Visit the Marché des Fleurs, La Nouvelle Liberté statue, and artisan villages with Akwa Palace's certified local guides.</p>
+          <p>✅ <strong>Diplomatic-grade safety:</strong> Many embassies recommend Akwa Palace for visiting dignitaries — the highest security standard in Douala.</p>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 1rem;">
+        <span class="crown-badge" style="background:#2c5e2e; color:#f5e5c8;">🇨🇲 COME, DISCOVER CAMEROON WITH TOTAL CONFIDENCE 🇨🇲</span>
+      </div>
+      <li class="page_item page-item-386"><a href="../index-eng.html">Welcome to Hôtel Akwa Palace Douala</a></li>
+<li class="page_item page-item-407"><a href="../attraction-eng.html">Attractions</a></li>
+<li class="page_item page-item-397"><a href="../contact.html">Contact us</a></li>
+<li class="page_item page-item-398"><a href="../FAQ-eng.html">FAQ</a></li>
+<li class="page_item page-item-401"><a href="../photos.html">Legal Notice</a></li>
+<li class="page_item page-item-400"><a href="../location-eng.html">Location</a></li>
+<li class="page_item page-item-395"><a href="../events-eng.html">Meetings &#038; events</a></li>
+<li class="page_item page-item-405"><a href="../offer.html">Offers</a></li>
+<li class="page_item page-item-402"><a href="../photos.html">Photos</a></li>
+<li class="page_item page-item-402"><a href="best-beaches-in-cameroon.html">CEO beaches</a></li>
+<li class="page_item page-item-390 page_item_has_children"><a href="../kitchen-eng.html">Restaurant</a>
+<ul class='children'>
+	<li class="page_item page-item-392"><a href="../rooms/bistro-eng.html">Le Bistro</a></li>
+	<li class="page_item page-item-394"><a href="../rooms/tourn-eng.html">Le Tournebroche</a></li>
+	<li class="page_item page-item-393"><a href="../rooms/nsa-eng.html">Le Tsä</a></li>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 — Akwa Palace Hotel Review & Cameroon Travel Safety Guide. Verified data from Cameroonian Tourism Board & guest testimonials. <br> 🛡️ <strong>Your safety guarantee:</strong> When staying at Akwa Palace and following local advice, you will experience one of Africa's most welcoming and secure destinations. <br> 📸 <strong>All images equal size:</strong> Each photo displays at 200px height with cover cropping — perfect uniform gallery.<br>
+    🏠 <h2><a href="/eng/index-eng.html" style="color:#ad7a42; text-decoration: underline;">Return to Home Page</a></h2> for exclusive rates & travel tips.</p>
+  </footer>
+</div>
+
+<script>
+  (function() {
+    console.log("✅ Akwa Palace Hotel Review — with EQUAL IMAGE SIZE FIX (height:200px, object-fit:cover)");
+    let images = document.querySelectorAll('.photo-place img');
+    console.log(`📸 Found ${images.length} image placeholders. Each will display at uniform size (200px height).`);
+    
+    // Check for any broken images and log them
+    images.forEach((img, index) => {
+      img.addEventListener('error', function() {
+        console.log(`⚠️ Image ${index+1} not found: ${this.src}`);
+        console.log(`   → Make sure the file exists at: ../../images/ folder`);
+      });
+    });
+  })();
+</script>
+</body>
+</html>

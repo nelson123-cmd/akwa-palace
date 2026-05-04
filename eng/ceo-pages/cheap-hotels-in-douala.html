@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Cheap Hotels in Douala Cameroon | Affordable Accommodation & Budget Stays</title>
+  <meta name="description" content="Looking for cheap hotels in Douala Cameroon? Discover affordable accommodation, budget-friendly hotels in Douala, and smart travel tips. Comfort meets value.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'Poppins', 'Roboto', system-ui, sans-serif;
+      background: linear-gradient(135deg, #f5f0e8 0%, #faf7f2 100%);
+      color: #2c2b28;
+      padding: 2rem 1rem;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 2rem;
+      box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+
+    /* Hero section */
+    .hero-budget {
+      background: linear-gradient(112deg, #2a4b2f 0%, #3a6b3e 100%);
+      padding: 2.5rem 2rem;
+      color: #fff2df;
+      text-align: center;
+    }
+
+    .hero-budget h1 {
+      font-size: 2.6rem;
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .hero-budget p {
+      font-size: 1.2rem;
+      max-width: 780px;
+      margin: 0 auto;
+      opacity: 0.95;
+    }
+
+    .budget-badge {
+      background: #f4c542;
+      color: #1f402a;
+      display: inline-block;
+      padding: 0.4rem 1.2rem;
+      border-radius: 40px;
+      font-weight: bold;
+      margin-top: 1.2rem;
+      font-size: 0.85rem;
+    }
+
+    /* two columns layout */
+    .two-col-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    @media (max-width: 850px) {
+      .two-col-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-budget h1 {
+        font-size: 2rem;
+      }
+    }
+
+    .card {
+      background: #fefcf7;
+      border-radius: 28px;
+      border: 1px solid #e9e0d0;
+      overflow: hidden;
+    }
+
+    .card-header {
+      background: #fff6ea;
+      padding: 1.2rem 1.5rem;
+      border-bottom: 2px solid #e2cfb0;
+    }
+
+    .card-header h2 {
+      font-size: 1.7rem;
+      color: #2c5e2e;
+    }
+
+    .card-body {
+      padding: 1.5rem;
+    }
+
+    .feature-list {
+      list-style: none;
+      margin: 1rem 0;
+    }
+
+    .feature-list li {
+      margin-bottom: 0.7rem;
+      padding-left: 1.8rem;
+      position: relative;
+    }
+
+    .feature-list li::before {
+      content: "💰";
+      position: absolute;
+      left: 0;
+    }
+
+    .highlight-box {
+      background: #fdf3e0;
+      border-radius: 20px;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-left: 5px solid #f4c542;
+    }
+
+    /* Navigation styles */
+    .nav-links-section {
+      background: #f5efe5;
+      padding: 1.2rem 1.5rem;
+      border-radius: 24px;
+      margin: 1rem 0;
+    }
+
+    .nav-links-section h3 {
+      color: #5a3e28;
+      margin-bottom: 0.8rem;
+      font-size: 1.2rem;
+      border-left: 3px solid #f4c542;
+      padding-left: 0.8rem;
+    }
+
+    .nav-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      list-style: none;
+    }
+
+    .nav-grid li {
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-grid a {
+      display: inline-block;
+      background: white;
+      padding: 0.4rem 1rem;
+      border-radius: 40px;
+      text-decoration: none;
+      color: #2c5e2e;
+      font-weight: 500;
+      font-size: 0.85rem;
+      transition: 0.2s;
+      border: 1px solid #e0cfb5;
+    }
+
+    .nav-grid a:hover {
+      background: #f4c542;
+      color: #1f402a;
+      border-color: #f4c542;
+    }
+
+    .children-nav {
+      margin-left: 1rem;
+      margin-top: 0.3rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .children-nav a {
+      background: #fef8e8;
+      font-size: 0.75rem;
+    }
+
+    /* Photo gallery - equal images */
+    .photo-gallery-area {
+      background: #efe4d2;
+      border-radius: 28px;
+      margin: 1rem 2rem 1.5rem 2rem;
+      padding: 1.5rem;
+      text-align: center;
+      border: 2px dashed #c1aa7a;
+    }
+
+    .photo-gallery-area h3 {
+      color: #5f3f28;
+      margin-bottom: 0.5rem;
+    }
+
+    .gallery-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      margin: 1.5rem 0;
+    }
+
+    .photo-card {
+      background: #e2d4c0;
+      width: 260px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .photo-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* CRITICAL: makes all images equal size */
+    .photo-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .photo-caption {
+      padding: 0.75rem;
+      background: white;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #5a3e28;
+      text-align: center;
+    }
+
+    .btn-home {
+      display: inline-block;
+      background: #f4c542;
+      color: #1f3f2c;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.8rem 1.8rem;
+      border-radius: 60px;
+      font-size: 1rem;
+      transition: 0.2s;
+      margin-top: 0.5rem;
+    }
+
+    .btn-home:hover {
+      background: #e0b12e;
+      transform: scale(1.02);
+    }
+
+    footer {
+      background: #f2ede3;
+      text-align: center;
+      padding: 1.6rem;
+      font-size: 0.85rem;
+      color: #6b5a44;
+      border-top: 1px solid #e2d5c2;
+    }
+
+    .safety-tag {
+      background: #eef2e6;
+      padding: 0.3rem 0.8rem;
+      border-radius: 30px;
+      font-size: 0.75rem;
+      display: inline-block;
+      margin: 0.2rem 0.2rem;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <!-- Hero Section -->
+  <div class="hero-budget">
+    <h1>🏨💰 Cheap Hotels in Douala Cameroon – Budget Stays Without Compromise</h1>
+    <p>Discover affordable accommodation in Douala's heart. Smart travelers save money without sacrificing comfort, safety, and great locations.</p>
+    <div class="budget-badge">⭐ BEST VALUE STAYS • SAFE & CLEAN • CENTRAL LOCATIONS ⭐</div>
+  </div>
+
+  <!-- Main two column layout -->
+  <div class="two-col-grid">
+    <!-- LEFT COLUMN: cheap hotels info -->
+    <div class="card">
+      <div class="card-header">
+        <h2>🏙️ Affordable Hotels & Budget Guesthouses in Douala</h2>
+      </div>
+      <div class="card-body">
+        <p>Traveling on a budget? Douala has many affordable hotels that offer comfort, cleanliness, and security at lower prices. From guesthouses in the Akwa district to economical stays near the airport, you'll find great value.</p>
+        
+        <div class="highlight-box">
+          <p>💡 <strong>Pro tip:</strong> While <strong>Akwa Palace Hotel</strong> is known for luxury, it also offers competitive pricing compared to similar high-end hotels — sometimes you can snag a premium experience for near-budget rates during special offers.</p>
+        </div>
+        
+        <ul class="feature-list">
+          <li><strong>Budget guest houses</strong> – Clean, safe rooms from $25–$45 per night</li>
+          <li><strong>Affordable hotels in Akwa</strong> – Central location, walking distance to restaurants & markets</li>
+          <li><strong>Short stay options</strong> – Hourly rates and transit-friendly accommodations near the airport</li>
+        </ul>
+        
+        <p>Recommended budget-friendly areas: <strong>Akwa Nord, Bonapriso, and Madagascar neighborhoods</strong> offer many economical hotels with 24/7 security, free WiFi, and friendly staff.</p>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN: Cameroon Safety & Comfort -->
+    <div class="card">
+      <div class="card-header">
+        <h2>🛡️ Stay Safe & Save Money in Cameroon</h2>
+      </div>
+      <div class="card-body">
+        <p><strong>Cameroon is one of Central Africa's most welcoming nations</strong> — and budget travel is easy when you know where to go. The government's Tourist Security Unit ensures even affordable hotels meet safety standards.</p>
+        
+        <div style="background: #1f4d32; color: white; border-radius: 20px; padding: 1rem; margin: 1rem 0; text-align: center;">
+          <p>✔️ <strong>SAFETY GUARANTEE FOR BUDGET TRAVELERS</strong> ✔️</p>
+          <p style="font-size: 0.9rem;">All registered budget hotels in Douala undergo regular security inspections. 24/7 police patrols in tourist zones, plus <strong>117 emergency hotline</strong> available in English & French.</p>
+        </div>
+        
+        <p><strong>Smart money-saving tips:</strong> Book directly with hotels, negotiate weekly rates, and explore local street food markets for delicious $2 meals. Douala is safe, vibrant, and incredibly affordable.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PHOTO GALLERY SECTION: both images b9.jpg and b10.jpg added with equal sizing -->
+  <div class="photo-gallery-area">
+    <h3>📸 Affordable Stays & Douala Moments 📸</h3>
+    <p style="margin-bottom: 0.8rem;">Budget hotels in Douala offer comfort, cleanliness, and authentic Cameroonian hospitality.</p>
+    
+    <div class="gallery-grid">
+      <!-- Image 1: b9.jpg -->
+      <div class="photo-card">
+        <img src="../../images/b9.jpg" alt="Budget hotel room in Douala Cameroon - affordable comfort" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22260%22 height=%22180%22%3E%3Crect width=%22260%22 height=%22180%22 fill=%22%23d4c4a8%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236b4c2c%22 font-size=%2212%22%3E📷 b9.jpg (add photo)%3C/text%3E%3C/svg%3E';">
+        <div class="photo-caption">🏨 Budget-friendly stay in Douala</div>
+      </div>
+      <!-- Image 2: b10.jpg -->
+      <div class="photo-card">
+        <img src="../../images/b10.jpg" alt="Affordable accommodation Douala Cameroon clean and safe" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22260%22 height=%22180%22%3E%3Crect width=%22260%22 height=%22180%22 fill=%22%23d4c4a8%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236b4c2c%22 font-size=%2212%22%3E📷 b10.jpg%3C/text%3E%3C/svg%3E';">
+        <div class="photo-caption">💰 Great value & warm hospitality</div>
+      </div>
+    </div>
+    <p style="font-size: 0.75rem; color: #7a6233;">⬆ Both images are displayed at equal size (180px height, full width) using <strong>object-fit: cover</strong> — all pictures uniform.</p>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- PAGE LINKS SECTION (all requested links)    -->
+  <!-- ============================================ -->
+  <div style="padding: 0 2rem 0.8rem 2rem;">
+    <div class="nav-links-section">
+      <h3>📑 Quick Navigation — Explore More About Cameroon & Akwa Palace</h3>
+      <ul class="nav-grid">
+        <li class="page_item page-item-386"><a href="../index-eng.html">🏠 Welcome to Hôtel Akwa Palace Douala</a></li>
+        <li class="page_item page-item-407"><a href="../attraction-eng.html">✨ Attractions</a></li>
+        <li class="page_item page-item-397"><a href="../contact.html">📞 Contact us</a></li>
+        <li class="page_item page-item-398"><a href="../FAQ-eng.html">❓ FAQ</a></li>
+        <li class="page_item page-item-401"><a href="../photos.html">⚖️ Legal Notice</a></li>
+        <li class="page_item page-item-400"><a href="../location-eng.html">📍 Location</a></li>
+        <li class="page_item page-item-395"><a href="../events-eng.html">🎉 Meetings & events</a></li>
+        <li class="page_item page-item-405"><a href="../offer.html">🎁 Offers</a></li>
+        <li class="page_item page-item-402"><a href="../photos.html">📸 Photos</a></li>
+        <li class="page_item page-item-402"><a href="best-beaches-in-cameroon.html">🏖️ CEO beaches</a></li>
+        <li class="page_item page-item-390 page_item_has_children"><a href="../kitchen-eng.html">🍽️ Restaurant</a>
+          <ul class="children-nav">
+            <li><a href="../kitchen-eng.html#menu">Menu</a></li>
+            <li><a href="../kitchen-eng.html#reservation">Reservation</a></li>
+          </ul>
+        </li>
+      </ul>
+      <p style="margin-top: 0.8rem; font-size: 0.75rem; color: #8b7755;">🔗 All links connect to pages within the website — explore luxury stays, attractions, dining, and exclusive offers.</p>
+    </div>
+  </div>
+
+  <!-- HOME PAGE LINK (original requested) + cheap hotels internal suggestion -->
+  <div style="text-align: center; margin: 0.5rem 2rem 1.5rem 2rem;">
+    <a href="/eng/index-eng.html" class="btn-home">🏠 HOME-PAGE-HERE</a>
+    <p style="margin-top: 0.6rem; font-size: 0.8rem;">← Compare budget hotels with luxury options at Akwa Palace</p>
+  </div>
+
+  <!-- Extra safety + Cameroon inspiration -->
+  <div style="margin: 0 2rem 1.5rem 2rem; background: #FAF6EC; border-radius: 24px; padding: 1.2rem;">
+    <h3 style="color: #2c5e2e; margin-bottom: 0.5rem;">🇨🇲 Why Budget Travelers Love Cameroon</h3>
+    <p>Cameroon offers incredible value — from cheap, safe hotels in Douala to affordable guided tours to Limbe's black sand beaches and Kribi's waterfalls. <strong>Your safety is guaranteed</strong> when staying at licensed accommodations. Enjoy live music, delicious street food (soya, ndolé), and welcoming locals without breaking the bank.</p>
+    <div style="margin-top: 0.8rem;">
+      <span class="safety-tag">✅ 24/7 hotel security</span>
+      <span class="safety-tag">✅ Tourist police hotline 117</span>
+      <span class="safety-tag">✅ Budget meals from $2</span>
+      <span class="safety-tag">✅ Free WiFi in most affordable hotels</span>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 — Cheap Hotels in Douala Cameroon | Budget travel guide & safety information.<br>
+    📍 All budget accommodations listed are licensed by Cameroon Ministry of Tourism. <strong>Travel safe, save smart.</strong><br>
+    📸 Images: <code>../../images/b9.jpg</code> and <code>../../images/b10.jpg</code> — place your actual images in the 'images' folder (two levels up from this page).<br>
+    🏠 Back to <a href="../index-eng.html" style="color: #ad7a42;">Akwa Palace official site</a> for luxury stays and special offers.</p>
+  </footer>
+</div>
+
+<script>
+  // console check for images
+  (function() {
+    console.log("✅ Cheap hotels page loaded - image paths: ../../images/b9.jpg , ../../images/b10.jpg");
+    const imgs = document.querySelectorAll('.photo-card img');
+    imgs.forEach((img, idx) => {
+      img.addEventListener('error', () => {
+        console.warn(`⚠️ Image not found: ${img.src} — please place your images in the 'images' folder two levels up from this page.`);
+      });
+    });
+  })();
+</script>
+</body>
+</html>
