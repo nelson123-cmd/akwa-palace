@@ -1,0 +1,42 @@
+cat > vercel.json << 'EOF'
+{
+  "name": "akwa-palace",
+  "version": 2,
+  "builds": [
+    {
+      "src": "*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "rooms-fr/**/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "eng/**/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "images/**/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "resto-fr/**/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.js",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
+EOF
