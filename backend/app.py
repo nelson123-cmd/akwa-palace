@@ -15,7 +15,12 @@ env = os.getenv('FLASK_ENV', 'production')
 app.config.from_object(config.get(env, config['default']))
 
 # Configure CORS
-CORS(app, origins=Config.CORS_ORIGINS, supports_credentials=True)
+CORS(app, origins=[
+    'https://akwapalace.vercel.app',     
+    'https://akwapalace.pythonanywhere.com',
+    'http://localhost:5000',
+    'http://127.0.0.1:5500'
+], supports_credentials=True, methods=["GET", "POST", "OPTIONS", "PUT", "DELETE"], allow_headers=["Content-Type", "Authorization"])
 
 # Apply security headers to all responses
 app.after_request(security_headers)
